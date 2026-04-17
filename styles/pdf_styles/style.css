@@ -1,0 +1,25 @@
+.download-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.pdf-links {
+    list-style: none;
+    padding: 0;
+}
+
+.pdf-links li {
+    margin: 10px 0;
+}
+
+.pdf-links a {
+    text-decoration: none;
+    color: #FF6B35;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.pdf-links a:hover {
+    color: #333;
+}

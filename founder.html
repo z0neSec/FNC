@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/general_image/raw.png">
+    <link rel="apple-touch-icon" href="image/general_image/raw.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/general_styles/nav_styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/general_styles/footer.css">
+    <link rel="stylesheet" href="styles/services_style/styles.css">
+    <link rel="stylesheet" href="styles/index_styles/styles.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar animate animate-slide-up">
+        <div class="navbar-brand">
+            <img src="image/general_image/newlogo (1).png" alt="Five Nines Consulting Logo">
+        </div>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="company.html" class="active">Company</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="fnc-veteran-services.html" class="active kitty-bx">Work With Us</a></li>
+
+            <!-- <li><a href="blockchain-MFA.html" class="active">Blockchain MFA</a></li> -->
+
+            <!-- <li><a href="https://medium.com/@FNCLLC" class="active kitty-bx">Blog</a></li> -->
+
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor"
+                    class="active cont">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero puppy-park">
+        <div class="hero-content kitty-box">
+            <h1>Expert digital solutions <br> <span>
+                    to elevate
+                    your business
+                </span>
+
+
+            </h1>
+            <p class="kitty-box">We deliver a wide range of digital services tailored to your business needs. Our team
+                provides effective strategies and reliable solutions that improve efficiency, resilience, and long-term
+                growth.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="services-tion">
+        <h2 class="section-title">
+            Our <strong>Included</strong> Services.
+
+        </h2>
+
+        <div class="services-tainer puppy-park">
+            <!-- UI/UX Design -->
+
+
+            <!-- Web Development -->
+            <div class="service-cad animate animate-slide-up kitty-box">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48ZyBmaWxsPSJub25lIj48cGF0aCBzdHJva2U9IiM2MjYyNjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIzLjQiIGQ9Ik00MiAxOHYyMmEyIDIgMCAwIDEtMiAySDhhMiAyIDAgMCAxLTItMlYxOCIvPjxwYXRoIHN0cm9rZT0iIzYyNjI2MiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIzLjQiIGQ9Ik02IDhhMiAyIDAgMCAxIDItMmgzMmEyIDIgMCAwIDEgMiAydjEwSDZ6Ii8+PHBhdGggZmlsbD0iIzYyNjI2MiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTIgMTRhMiAyIDAgMSAwIDAtNGEyIDIgMCAwIDAgMCA0bTYgMGEyIDIgMCAxIDAgMC00YTIgMiAwIDAgMCAwIDRtNiAwYTIgMiAwIDEgMCAwLTRhMiAyIDAgMCAwIDAgNCIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9nPjwvc3ZnPg=="
+                    class="service-icon animate animate-slide-up">
+                <h3>Custom Website Development</h3>
+                <p>Get a fully functional, professionally designed website built to your specifications.</p>
+            </div>
+            <div class="service-cad animate animate-slide-up kitty-box">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNjI2MjYyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMi40IDUuMzVhNCA0IDAgMSAwLTggMGE0IDQgMCAwIDAgOCAwbS0yLjE0Ni0xLjM1NGEuNS41IDAgMCAxIDAgLjcwOGwtMiAyYS41LjUgMCAwIDEtLjcwNyAwbC0xLTFhLjUuNSAwIDEgMSAuNzA3LS43MDhsLjY0Ni42NDdsMS42NDctMS42NDdhLjUuNSAwIDAgMSAuNzA3IDAiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiM2MjYyNjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTUuNTcgNC4xaDYuOTZhNiA2IDAgMCAwLS4xMjUgMS41SDUuNmMtLjU3MiAwLS45NTcgMC0xLjI1Mi4wMjVjLS4yODguMDIzLS40MjUuMDY1LS41MTUuMTExYTEuMjUgMS4yNSAwIDAgMC0uNTQ3LjU0N2MtLjA0Ni4wOS0uMDg4LjIyNy0uMTExLjUxNGMtLjAyMy4yNzgtLjAyNS42MzMtLjAyNSAxLjE0OFYxMy42aDE0LjV2LTIuMjk2YTYgNiAwIDAgMCAxLjUgMHYzLjA0NmwtLjAwNC4wNzdxLS4wMDUuMzI5LS4wMjYuNTk4Yy0uMDMuMzgtLjA5OC43MzYtLjI3IDEuMDc0YTIuNzUgMi43NSAwIDAgMS0xLjIwMiAxLjIwMWMtLjMzNy4xNzItLjY5My4yNC0xLjA3My4yN2MtLjM2NC4wMy0uODEuMDMtMS4zNDQuMDNoLTMuMjVhMS43NSAxLjc1IDAgMCAxLTMuMTYzIDBINS41N2MtLjUzNSAwLS45OCAwLTEuMzQ1LS4wM2MtLjM4LS4wMy0uNzM2LS4wOTgtMS4wNzMtLjI3YTIuNzUgMi43NSAwIDAgMS0xLjIwMi0xLjJjLS4xNzItLjMzOC0uMjQtLjY5NC0uMjctMS4wNzRhMTAgMTAgMCAwIDEtLjAyNi0uNTk4bC0uMDA0LS4wNzdWOC4wMmMwLS41MzUgMC0uOTguMDMtMS4zNDVjLjAzLS4zOC4wOTgtLjczNi4yNy0xLjA3M0EyLjc1IDIuNzUgMCAwIDEgMy4xNTIgNC40Yy4zMzctLjE3Mi42OTMtLjI0IDEuMDczLS4yN2MuMzY1LS4wMy44MS0uMDMgMS4zNDUtLjAzbS4wMyAxMmMtLjU3MiAwLS45NTcgMC0xLjI1Mi0uMDI1Yy0uMjg4LS4wMjMtLjQyNS0uMDY1LS41MTUtLjExMWExLjI1IDEuMjUgMCAwIDEtLjU0Ny0uNTQ2YTEgMSAwIDAgMS0uMDktLjMxOGgxNC40MDdhMSAxIDAgMCAxLS4wOS4zMThhMS4yNSAxLjI1IDAgMCAxLS41NDYuNTQ2Yy0uMDkuMDQ2LS4yMjcuMDg4LS41MTQuMTExYy0uMjk2LjAyNC0uNjguMDI1LTEuMjUzLjAyNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiM2MjYyNjIiIGQ9Ik04LjQgMTguMWEuNzUuNzUgMCAwIDEgLjc1Ljc1di4yODRjMCAuODE4LS40MyAxLjU1NS0xLjA5OSAxLjk2Nmg0LjY5OGEyLjMxIDIuMzEgMCAwIDEtMS4wOTktMS45NjZ2LS4yODRhLjc1Ljc1IDAgMCAxIDEuNSAwdi4yODRjMCAuMzcuMjUyLjY5My42MTEuNzgzbC4zOTYuMWExLjMxMSAxLjMxMSAwIDAgMS0uMzE5IDIuNTgzSDYuOTYyYTEuMzEyIDEuMzEyIDAgMCAxLS4zMTktMi41ODRsLjM5Ni0uMDk5YS44MS44MSAwIDAgMCAuNjExLS43ODN2LS4yODRhLjc1Ljc1IDAgMCAxIC43NS0uNzUiLz48L3N2Zz4="
+                    class="service-icon">
+                <h3>IT Support & Consulting</h3>
+                <p>Expert technical guidance and infrastructure implementation.</p>
+
+            </div>
+
+            <!-- App Development -->
+            <div class="service-cad animate animate-slide-up kitty-box">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJtMTIuNTkzIDIzLjI1OGwtLjAxMS4wMDJsLS4wNzEuMDM1bC0uMDIuMDA0bC0uMDE0LS4wMDRsLS4wNzEtLjAzNXEtLjAxNi0uMDA1LS4wMjQuMDA1bC0uMDA0LjAxbC0uMDE3LjQyOGwuMDA1LjAybC4wMS4wMTNsLjEwNC4wNzRsLjAxNS4wMDRsLjAxMi0uMDA0bC4xMDQtLjA3NGwuMDEyLS4wMTZsLjAwNC0uMDE3bC0uMDE3LS40MjdxLS4wMDQtLjAxNi0uMDE3LS4wMThtLjI2NS0uMTEzbC0uMDEzLjAwMmwtLjE4NS4wOTNsLS4wMS4wMWwtLjAwMy4wMTFsLjAxOC40M2wuMDA1LjAxMmwuMDA4LjAwN2wuMjAxLjA5M3EuMDE5LjAwNS4wMjktLjAwOGwuMDA0LS4wMTRsLS4wMzQtLjYxNHEtLjAwNS0uMDE4LS4wMi0uMDIybS0uNzE1LjAwMmEuMDIuMDIgMCAwIDAtLjAyNy4wMDZsLS4wMDYuMDE0bC0uMDM0LjYxNHEuMDAxLjAxOC4wMTcuMDI0bC4wMTUtLjAwMmwuMjAxLS4wOTNsLjAxLS4wMDhsLjAwNC0uMDExbC4wMTctLjQzbC0uMDAzLS4wMTJsLS4wMS0uMDF6Ii8+PHBhdGggZmlsbD0iIzYyNjI2MiIgZD0iTTExLjEzMiAxMy4wMDRhMSAxIDAgMCAxIDEuNzg4Ljg4OGwtLjA1Mi4xMDRMMTEuNzIzIDE2aDIuMTA1YTEuMSAxLjEgMCAwIDEgMS4wMDYgMS41NDVsLS4wNTEuMWwtMS45MTUgMy4zNTFhMSAxIDAgMCAxLTEuNzg4LS44ODhsLjA1Mi0uMTA0TDEyLjI3NyAxOGgtMi4xMDVhMS4xIDEuMSAwIDAgMS0xLjAwNi0xLjU0NWwuMDUxLS4xek0xMS41IDJhNi41IDYuNSAwIDAgMSA2LjA4NiA0LjIxMkE2LjAwMiA2LjAwMiAwIDAgMSAxOC40IDE3LjVhMSAxIDAgMCAxLS44LTEuODMyYTQuMDAxIDQuMDAxIDAgMCAwLS45NDUtNy42MTVhMS4wMSAxLjAxIDAgMCAxLS44MS0uNzMyQTQuNSA0LjUgMCAwIDAgNy4wMjcgOWExLjAxIDEuMDEgMCAwIDEtLjc2IDEuMDlhMy4wMDIgMy4wMDIgMCAwIDAtLjAxOSA1LjgxNmExIDEgMCAwIDEtLjQ5OCAxLjkzNkE1LjAwMiA1LjAwMiAwIDAgMSA1IDguNDE2QTYuNSA2LjUgMCAwIDEgMTEuNSAyIi8+PC9nPjwvc3ZnPg=="
+                    class="service-icon">
+                <h3>Cloud Migration & Optimization</h3>
+                <p>Seamless migration to the cloud. Performance optimization and cost-effective cloud solutions.</p>
+
+            </div>
+
+            <!-- 24/7 Support -->
+            <div class="service-cad animate animate-slide-up kitty-box">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNjI2MjYyIiBkPSJNMTguNzIgMTQuNzZjLjM1LS44NS41NC0xLjc2LjU0LTIuNzZjMC0uNzItLjExLTEuNDEtLjMtMi4wNWMtLjY1LjE1LTEuMzMuMjMtMi4wNC4yM0E5LjA3IDkuMDcgMCAwIDEgOS41IDYuMzRhOS4yIDkuMiAwIDAgMS00LjczIDQuODhjLS4wNC4yNS0uMDQuNTItLjA0Ljc4QTcuMjcgNy4yNyAwIDAgMCAxMiAxOS4yN2MxLjA1IDAgMi4wNi0uMjMgMi45Ny0uNjRjLjU3IDEuMDkuODMgMS42My44MSAxLjYzYy0xLjY0LjU1LTIuOTEuODItMy43OC44MmMtMi40MiAwLTQuNzMtLjk1LTYuNDMtMi42NmE5IDkgMCAwIDEtMi4yNC0zLjY5SDJ2LTQuNTVoMS4wOWE5LjA5IDkuMDkgMCAwIDEgMTUuMzMtNC42YTkgOSAwIDAgMSAyLjQ3IDQuNkgyMnY0LjU1aC0uMDZMMTguMzggMThsLTUuMy0uNnYtMS42N2g0Ljgzem0tOS40NS0yLjk5Yy4zIDAgLjU5LjEyLjguMzRhMS4xMzYgMS4xMzYgMCAwIDEgMCAxLjZjLS4yMS4yMS0uNS4zMy0uOC4zM2MtLjYzIDAtMS4xNC0uNS0xLjE0LTEuMTNzLjUxLTEuMTQgMS4xNC0xLjE0bTUuNDUgMGMuNjMgMCAxLjEzLjUxIDEuMTMgMS4xNHMtLjUgMS4xMy0xLjEzIDEuMTNzLTEuMTQtLjUtMS4xNC0xLjEzYTEuMTQgMS4xNCAwIDAgMSAxLjE0LTEuMTQiLz48L3N2Zz4="
+                    class="service-icon">
+                <h3>Remote IT Support</h3>
+                <p>Available Monday through Friday during business hours. Ensuring smooth and uninterrupted operations
+                    but we’re closed on weekends and holidays.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="body">
+        <h2 class="section-heading">Schedule Optimization & <br><span>
+                Redundancy Solutions</span></h2>
+
+        <div class="hero-section">
+            <img src="image/Frame 1000005521 (1).png" alt="Redundancy Solutions" class="hero-image">
+            <div class="heroback">
+                <div class="hero-overlay">
+                    <h2>Five Nines Consulting</h2>
+                    <p>At Five Nines Consulting (FNC), we've always been committed to precision, reliability, and
+                        delivering high-quality service. We understand that businesses require dependable support at all
+                        times, and we’re stepping up to ensure you get exactly that.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-container">
+            <div class="feature-card bright">
+                <div class="feature-icon icon-blue"><img src="image/user-group.png"></div>
+                <div class="feature-title">What this means for you</div>
+                <ul class="feature-list shine">
+                    <li class="more-details"><img src="image/checkmark-badge-01.png">24/7 Coverage, No matter the time,
+                        our team is ready to assist.</li>
+                    <li class="more-details"><img src="image/checkmark-badge-01.png">Weekend & Night Shift Availability,
+                        Business doesn't stop, and neither do we.</li>
+                    <li class="more-details"><img src="image/checkmark-badge-01.png">Dedicated Vendor Option, We can be
+                        your sole IT & consulting provider, ensuring seamless integration and dedicated service.</li>
+                    <li class="more-details"><img src="image/checkmark-badge-01.png">Emergency Response, If you require
+                        immediate attention at odd hours, you will be covered.</li>
+                </ul>
+            </div>
+
+            <div class="feature-card black">
+                <div class="feature-icon icon-orange"><img src="image/hot-price.png"></div>
+                <div class="feature-title">What this means for our team & pricing</div>
+                <ul class="feature-list white">
+                    <li class="more-details"><img src="image/checkmark-badge-01 (1).png">Premium Compensation for
+                        Employees. Those working weekends, night shifts, and emergency calls will receive additional
+                        pay.</li>
+                    <li class="more-details"><img src="image/checkmark-badge-01 (1).png">Customer Cost Adjustments.
+                        Extended-hour support, overnight responses, and urgent requests will reflect in premium pricing
+                        for sustainability.</li>
+                    <li class="more-details"><img src="image/checkmark-badge-01 (1).png">Time Zone Adaptation. As we
+                        transition into full coverage, we ask for patience while we align our team across different
+                        global time zones.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="engineering-section swiped">
+        <img src="image/custom-website.png" alt="Engineering Solutions">
+        <div class="contenteng">
+            <h2>From engineering solutions <br> to embedded systems</h2>
+            <p>We are a pioneer in engineering solutions. Our expertise ranges from areas such as plant design and
+                mechanical engineering to leading-edge technology design with innovations such as digital twin and AM
+                manufacturing solutions. In the field of embedded systems, our teams are ready to help on design of
+                electronics, embedding software, antenna and RF system design, and running EM simulations.</p>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contact-us">
+            <h3>CONTACT US</h3>
+            <hr>
+        </div>
+        <div class="container">
+
+
+            <div class="footer-container">
+                <div class="footer-column">
+                    <img src="image/general_image/five nine.png" alt="Five Nines Consulting" class="footer-logo">
+                    <div class="social-links">
+                        <!-- <a href="https://x.com/fncnodeos" target="_blank"> X</a><br> -->
+                        <a href="https://www.linkedin.com/in/vasiliy-s-ivanov/" target="_blank"> LinkedIn</a><br>
+                        <a href="https://www.facebook.com/share/1FNtTRnNj4/" target="_blank"> Facebook</a><br>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3> Quick links</h3>
+                    <div class="quick-links">
+
+                        <a href="about.html">About Us</a><br>
+                        <a href="services.html">Services</a><br>
+                        <!-- <a href="tokenomics.html">Tokenomics</a><br> -->
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor">Contact
+                            Us</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Location</h3>
+                    <div class="lokation">
+
+                        <p class="mails">Roanoke, VA</p>
+                    </div>
+                    <div class="footer-column news">
+                        <h3>Get in touch</h3>
+                        <p class="mails">sales@fiveninesconsulting.io</p>
+                        <h3 style=" margin-top: 15px;">Phone</h3>
+                        <p class="mails">703-309-6460</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr>
+            <p>© 2025 FIVE NINES CONSULTING</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+.services-tion {
+text-align: left;
+padding: 60px 5%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+font-size: 32px;
+font-weight: normal;
+margin-bottom: 40px;
+color: #111;
+position: relative;
+font-family: "Montserrat", serif;
+font-weight: bold;
+text-align: center;
+
+}
+
+
+.section-title strong {
+font-weight: bold;
+position: relative;
+display: inline-block;
+}
+
+
+
+.services-tainer {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.service-cad {
+
+padding: 5px;
+border-radius: 15px;
+border: 1px solid #62626262;
+text-align: left;
+width: 23%;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+justify-content: center;
+align-items: center;
+padding: 20px;
+padding-bottom: 0px;
+padding-top:
+10px;
+}
+
+.service-cad:hover {
+transform: translateY(-5px);
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Icon */
+.service-icon {
+width: 52px;
+height: 52px;
+margin-bottom: 10px;
+
+
+
+
+
+}
+.service-icon img{
+z-index: 700;
+}
+
+/* Service Heading */
+.service-cad h3 {
+font-size: 15px;
+color: #000;
+font-family: "Montserrat", serif;
+margin-bottom: 10px;
+font-weight: bold;
+line-height: 20px;
+}
+
+/* Service Paragraph */
+.service-cad p {
+font-size: 14px;
+color: #626262;
+margin-bottom: 20px;
+font-family: "Work Sans", serif;
+font-weight: 500;
+}
+
+/* Learn More Link */
+.learn-more {
+font-size: 14px;
+font-weight: 600;
+color: #ff6b35;
+text-decoration: none;
+display: inline-block;
+}
+
+.learn-more:hover {
+text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+.services-tainer {
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.service-cad {
+width: 45%;
+}
+}
+
+@media (max-width: 768px) {
+.service-cad {
+width: 100%;
+max-width: 400px;
+margin: 0 auto;
+}
+
+.section-title {
+font-size: 28px;
+}
+}
+
+
+.engineering-section {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 80px;
+max-width: 1200px;
+margin: 0 auto;
+gap: 80px;
+}
+
+/* Direct Image Styling */
+.engineering-section img {
+width: 100%;
+max-width: 500px;
+height: auto;
+border-radius: 20px 0 0 20px;
+}
+
+/* Content Styling */
+.contenteng {
+flex: 1;
+max-width: 600px;
+}
+
+.contenteng h2 {
+font-size: 28px;
+font-weight: bold;
+color: #0a0a0a;
+line-height: 40px;
+
+font-family: "Montserrat", serif;
+}
+
+.contenteng p {
+font-size: 16px;
+color: #626262;
+font-family: "Work Sans", serif;
+line-height: 1.6;
+margin-bottom: 20px;
+font-weight: 500;
+}
+
+/* Links */
+.link {
+display: block;
+font-size: 16px;
+font-weight: bold;
+color: #5a32ea;
+text-decoration: none;
+margin-top: 10px;
+}
+
+.link:hover {
+text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+.engineering-section {
+flex-direction: column;
+text-align: center;
+}
+
+.engineering-section img {
+border-radius: 20px;
+}
+
+.contenteng {
+padding: 20px;
+}
+}

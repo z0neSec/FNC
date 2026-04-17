@@ -1,0 +1,126 @@
+
+.container {
+    /* max-width: 800px; */
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.subheading {
+    color:  #FF6B35;
+    font-family: "Work Sans", serif;
+    line-height: 100%;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+  
+    
+    font-family: "Montserrat", serif;
+    color: #000;
+    text-align: center;
+}
+.ctainer {
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.crd {
+    background: white;
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: "Montserrat", serif;
+    color: #626262;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #626262;
+    font-family: "Work Sans", serif;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.highlight {
+    color: #f26b3a;
+    line-height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Work Sans", serif;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Work Sans", serif;
+    color: #626262;
+    padding: 5px 0;
+}
+.image-caption-container {
+    text-align: center;
+    max-width: auto;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.image-caption-container img {
+    width: 1108px;
+    border-radius: 10px;  
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.image-caption {
+    font-style: italic;
+    width: 1060px;
+    font-size: 18px;
+   font-weight: 600;
+    color: #626262;
+    max-width: 90vw;
+   
+ 
+    font-family: "Work Sans", serif; 
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 21.11px;
+
+    
+}
+@media (max-width:767px){
+    .crd{
+        margin: auto 20px;
+    }
+    .subheading{
+        font-size: 26px;
+    }
+    .main-heading{
+        font-size: 50px;
+    }
+}

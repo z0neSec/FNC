@@ -1,0 +1,456 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+     max-width: 1370px; 
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.back-button:hover {
+    color: #000;
+}
+
+.gofundme-button {
+    background-color: #ff6f38;
+    color: white;
+    text-decoration: none;
+
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  
+    text-align: center;
+    /* margin-right: 30px; */
+  
+}
+
+.founder-section {
+    max-width: 1450px; 
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 900px; */
+}
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    
+}
+.image-gallery img {
+    width: 351px; /* Adjust based on preference */
+    height: 240px;
+    object-fit: cover;
+    border-radius: 7px;
+    
+    /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s ease; */
+}
+.section-title {
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #626266;
+    margin-bottom: 10px;
+}
+
+.story-container {
+    /* max-width: 700px; */
+    text-align: left;
+    font-family: "Work Sans", serif;
+    max-width: 1450px; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #626266;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+    color: black;
+}
+.gofundme-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1450px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-button-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input {
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    padding: 8px;
+ 
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    border-radius: 1px;
+    width: 233px;
+}
+.gfund{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    
+}
+.gofundme-btn {
+    background-color: #ff6f3e;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    border: none;
+    padding: 8px 12px;
+  
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:767px){
+    .container {
+        display: flex;
+        justify-content: space-between;
+       width: 100%;
+         /* max-width: 1370px;  */
+        padding: 10px;
+        margin: 0 auto; 
+    }
+}
+@media (max-width: 600px) {
+    .image-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-gallery img {
+        width: 150px;
+        height: 100px;
+    }
+    
+}
+
+.new-founder{
+    display: flex;
+    gap: 90px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    flex-wrap: wrap;
+}
+
+.founder-intro {
+    max-width: 500px;
+    height: 300px;
+}
+
+.founder-intro img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.founder-gallery {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    position: relative;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin-top: 35px;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensure snap behavior */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+.gallery-images img {
+    max-width: 250px;
+    height: 150px;
+    object-fit: cover;
+    filter: brightness(80%);
+    opacity: 0.8;
+    scroll-snap-align: start; /* Align each item at the start of the container */
+    cursor: pointer;  /* Show pointer on hover to indicate clickability */
+    transition: opacity 0.3s;
+}
+
+.gallery-images img:hover {
+    opacity: 1; /* Make image fully visible on hover */
+}
+
+.founder-gallery h1 {
+    font-size: 42px;
+    font-family: "Montserrat", serif;
+    color: #111;
+    font-weight: 700;
+    margin-top: -70px;
+}
+
+/* Styling for the arrow icon */
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow-container svg {
+    width: 40px;
+    height: 40px;
+    fill: #111;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow-container:hover svg {
+    transform: translateX(10px); /* Arrow movement on hover */
+}
+.gsap{
+    display: none;
+}
+
+/* Media query to make it swipeable on smaller screens */
+@media (max-width: 750px) {
+    .gallery-images {
+        gap: 10px;
+        
+    }
+
+    .founder-gallery {
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+    .new-founder{
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .gallery-images img {
+        max-width: 150px;
+        height: 100px;
+    }
+    .gallery-images{
+        margin-top: 50px;
+    }
+    .founder-gallery .disap{
+        display: none;
+ }
+ .gsap{
+    display: block;
+    font-size: 32px;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+padding-bottom: 20px;
+ }
+}
+
+
+.para{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    text-align: left;
+}
+.para p{
+    font-size: 18px;
+    font-family: "Work Sans", serif;
+    color: #626262;
+    font-weight: 500;
+    margin-top: -2px;
+    line-height: 25px;
+    text-align: left;
+
+}
+.para p strong{
+    font-weight: 700;
+    font-size: 44px;
+    color: #111;
+}
+.para p span{
+    font-weight: 700;
+    color: #111;
+}
+.para i{
+    font-weight: 700;
+    font-family: "Work Sans", serif;
+    color: #111;
+    font-family: 20px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    align-self: flex-start;
+}
+
+@media (max-width: 768px){
+    .para{
+        padding: 20px;
+        margin-top: -25px;
+        width: 100%;
+        max-width: 100%;
+    }
+.para p{
+    font-size: 16px;
+    text-align: left;
+line-height: 1.6;
+}
+}
+.read-mfa{
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 40px;
+}
+.read-mfa h3{
+    font-size: 24px;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    text-align: left;
+    color: #111;
+
+}
+.read-info{
+    display: flex;
+    max-width: 1400px;
+    align-self: flex-start;
+    gap: 50px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 60px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+.read-info img{
+    max-width: 600px;
+    height: 250px;
+    object-fit: cover;
+
+}
+.read-info-text{
+    max-width: 500px;
+    align-self: flex-start;
+}
+.read-info-text p{
+    font-size: 20px;
+    font-family: "Work Sans", serif;
+    color: #ff6f38;
+    text-decoration: none;
+    color: #602269;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap;
+
+}
+.read-info-text a{
+    font-family: "Work Sans", serif;
+    font-size: 500;
+    color: #ff6f38;
+    text-decoration: none;
+    color: #602269;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1019px) {
+.read-info{
+    gap: 20px;
+}
+}
+@media (max-width: 989px){
+    .read-info{
+        gap: 0px;
+    }
+}
+@media (max-width: 1024px) {
+.read-info{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+.read-mfa{
+    padding: 0px;
+}
+.read-info-text{
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.read-info img{
+    max-width: 100%;
+    width: 100%;
+}
+}
