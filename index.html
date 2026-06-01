@@ -4,450 +4,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNC | Home</title>
+    <title>FNC | Five Nines Consulting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/svg+xml" href="image/general_image/fnc-logo.svg">
+    <link rel="apple-touch-icon" href="image/general_image/fnc-logo.svg">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/general_styles/nav_styles.css">
-    <link rel="stylesheet" href="styles/index_styles/styles.css">
-    <link rel="stylesheet" href="styles/general_styles/footer.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="image/general_image/raw.png">
-    <link rel="apple-touch-icon" href="image/general_image/raw.png">
-    <link rel="stylesheet" href="styles/company_styles/styles.css">
-
+    <link rel="stylesheet" href="styles/general_styles/nav_styles.css?v=2">
+    <link rel="stylesheet" href="styles/general_styles/motion.css">
 </head>
 
 <body>
 
-    <nav class="navbar puppy-park">
-        <div class="navbar-brand animate animate-slide-left">
-            <img src="image/general_image/newlogo.png" alt="Five Nines Consulting Logo">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting logo" class="navbar-logo">
         </div>
-        <button class="menu-button" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links animate animate-slide-up">
-            <li><a href="index.html" class="active kitty-bx">Home</a></li>
-            <li><a href="company.html" class="active kitty-bx">Company</a></li>
-            <li><a href="services.html" class="active kitty-bx">Services</a></li>
-            <li><a href="fnc-veteran-services.html" class="active kitty-bx">Work With Us</a></li>
-
-            <!-- <li><a href="blockchain-MFA.html" class="active kitty-bx">Blockchain MFA</a></li> -->
-
-            <!-- <li><a href="https://medium.com/@FNCLLC" class="active kitty-bx">Blog</a></li> -->
-
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf_AwkTXJKU8YaObX6qcLstuJmSsATjNp_amhXu4SMuJ6lNdg/viewform?usp=publish-editor"
-                    class="active cont kitty-box">Contact Us</a></li>
+        <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="fnc-veteran-services.html">Work With Us</a></li>
+            <li><a href="contact.html" class="cont">Contact Us</a></li>
         </ul>
-
     </nav>
-    <section class="animate animate-slide-up">
-        <section class="hero ">
-            <div class="hero-content animate animate-slide-left">
-                <h1 style="color: #FF6B35;"> Where Precision Meets Purpose.<br>
 
-                </h1>
-                <p>FNC builds resilient systems and sustainable futures—empowering veterans, enabling decentralized
-                    innovation, and solving real-world problems with precision.</p>
+    <main>
+
+        <section class="idx-hero" aria-labelledby="idx-hero-heading">
+            <div class="idx-hero-glow-bg" aria-hidden="true"></div>
+            <div class="idx-container">
+                <div class="idx-hero-grid">
+                    <div class="idx-hero-content fnc-reveal">
+
+                        <h1 id="idx-hero-heading">Where Precision Meets <span class="idx-h1-accent">Purpose.</span></h1>
+                        <p class="idx-hero-sub">Five Nines Consulting builds technology products and takes on consulting engagements with the discipline of military operations and the rigor of modern engineering. Veteran-founded. Built for the long haul.</p>
+                        <div class="idx-hero-actions">
+                            <a href="services.html" class="idx-btn solid-btn">
+                                What We Do <svg class="idx-btn-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                            </a>
+                            <a href="contact.html" class="idx-btn outline-btn">Get in Touch</a>
+                        </div>
+                    </div>
+
+                    <div class="idx-hero-visual fnc-reveal" aria-hidden="true">
+                        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="idx-hero-svg">
+
+                            <defs>
+                                <pattern id="hGrid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+                                    <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1f2530" stroke-width="0.5"/>
+                                </pattern>
+                                <radialGradient id="orangeGlow" cx="50%" cy="0%" r="80%">
+                                    <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.35"/>
+                                    <stop offset="100%" stop-color="#FF6B35" stop-opacity="0"/>
+                                </radialGradient>
+                                <linearGradient id="ledOn" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.4"/>
+                                    <stop offset="50%" stop-color="#FF6B35" stop-opacity="1"/>
+                                    <stop offset="100%" stop-color="#FF6B35" stop-opacity="0.7"/>
+                                </linearGradient>
+                            </defs>
+
+                            <rect width="500" height="400" fill="url(#hGrid)"/>
+                            <rect width="500" height="240" fill="url(#orangeGlow)" opacity="0.5"/>
+
+                            <!-- Window chrome -->
+                            <rect x="0" y="0" width="500" height="40" fill="#161b22"/>
+                            <line x1="0" y1="40" x2="500" y2="40" stroke="#1f2530" stroke-width="1"/>
+                            <circle cx="20" cy="20" r="5" fill="#3a4254"/>
+                            <circle cx="38" cy="20" r="5" fill="#3a4254"/>
+                            <circle cx="56" cy="20" r="5" fill="#3a4254"/>
+                            <text x="80" y="24" font-family="JetBrains Mono, monospace" font-size="10" fill="#6e7681" letter-spacing="0.5">fnc-ops ~ overview</text>
+                            <circle cx="448" cy="20" r="3" fill="#FF6B35">
+                                <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
+                            </circle>
+                            <text x="458" y="23" font-family="JetBrains Mono, monospace" font-size="8" fill="#6e7681">LIVE</text>
+
+                            <!-- Identity block, two columns: brand + core standard -->
+                            <rect x="24" y="60" width="452" height="96" fill="#161b22" stroke="#1f2530" stroke-width="1" rx="6"/>
+
+                            <!-- Left: brand -->
+                            <text x="40" y="84" font-family="JetBrains Mono, monospace" font-size="9" fill="#6e7681" letter-spacing="1.2">FIVE NINES CONSULTING</text>
+                            <text x="40" y="122" font-family="Work Sans, sans-serif" font-size="34" font-weight="800" fill="#f0f6fc" letter-spacing="-1">FNC</text>
+                            <text x="40" y="142" font-family="JetBrains Mono, monospace" font-size="8" fill="#FF6B35" letter-spacing="1.2">VETERAN-FOUNDED &#183; ROANOKE VA</text>
+
+                            <!-- Divider -->
+                            <line x1="250" y1="76" x2="250" y2="140" stroke="#1f2530" stroke-width="1"/>
+
+                            <!-- Right: core standard -->
+                            <text x="268" y="84" font-family="JetBrains Mono, monospace" font-size="9" fill="#6e7681" letter-spacing="1.2">CORE STANDARD</text>
+                            <text x="268" y="122" font-family="Work Sans, sans-serif" font-size="30" font-weight="700" fill="#f0f6fc">99.999<tspan font-size="17" fill="#FF6B35">%</tspan></text>
+                            <text x="268" y="142" font-family="JetBrains Mono, monospace" font-size="8" fill="#6e7681" letter-spacing="0.5">five nines reliability</text>
+
+                            <!-- Capabilities panel -->
+                            <rect x="24" y="172" width="452" height="156" fill="#161b22" stroke="#1f2530" stroke-width="1" rx="6"/>
+                            <text x="40" y="194" font-family="JetBrains Mono, monospace" font-size="9" fill="#6e7681" letter-spacing="1.2">WHAT WE DO</text>
+                            <line x1="40" y1="204" x2="460" y2="204" stroke="#1f2530" stroke-width="0.5"/>
+
+                            <g transform="translate(40, 218)">
+                                <rect x="0" y="0" width="3" height="13" fill="#FF6B35" rx="1"/>
+                                <text x="12" y="10.5" font-family="Work Sans, sans-serif" font-size="11.5" font-weight="600" fill="#f0f6fc">Cloud Services</text>
+                                <text x="412" y="10.5" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#8b949e">migration · optimization</text>
+                            </g>
+                            <g transform="translate(40, 240)">
+                                <rect x="0" y="0" width="3" height="13" fill="#FF6B35" rx="1" opacity="0.85"/>
+                                <text x="12" y="10.5" font-family="Work Sans, sans-serif" font-size="11.5" font-weight="600" fill="#f0f6fc">DevOps</text>
+                                <text x="412" y="10.5" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#8b949e">CI/CD · automation</text>
+                            </g>
+                            <g transform="translate(40, 262)">
+                                <rect x="0" y="0" width="3" height="13" fill="#FF6B35" rx="1" opacity="0.7"/>
+                                <text x="12" y="10.5" font-family="Work Sans, sans-serif" font-size="11.5" font-weight="600" fill="#f0f6fc">Custom Development</text>
+                                <text x="412" y="10.5" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#8b949e">web · platform · tools</text>
+                            </g>
+                            <g transform="translate(40, 284)">
+                                <rect x="0" y="0" width="3" height="13" fill="#FF6B35" rx="1" opacity="0.55"/>
+                                <text x="12" y="10.5" font-family="Work Sans, sans-serif" font-size="11.5" font-weight="600" fill="#f0f6fc">IT Services</text>
+                                <text x="412" y="10.5" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#8b949e">infrastructure · support</text>
+                            </g>
+                            <g transform="translate(40, 306)">
+                                <rect x="0" y="0" width="3" height="13" fill="#FF6B35" rx="1" opacity="0.4"/>
+                                <text x="12" y="10.5" font-family="Work Sans, sans-serif" font-size="11.5" font-weight="600" fill="#f0f6fc">Software Development</text>
+                                <text x="412" y="10.5" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#8b949e">engineering · review</text>
+                            </g>
+
+                            <!-- Bottom signature strip -->
+                            <rect x="24" y="344" width="452" height="40" fill="#161b22" stroke="#1f2530" stroke-width="1" rx="6"/>
+                            <rect x="40" y="361" width="270" height="6" rx="3" fill="#1f2530"/>
+                            <rect x="40" y="361" width="270" height="6" rx="3" fill="url(#ledOn)">
+                                <animate attributeName="width" values="60;270;60" dur="6s" repeatCount="indefinite"/>
+                            </rect>
+                            <text x="332" y="366" font-family="JetBrains Mono, monospace" font-size="9" fill="#6e7681" letter-spacing="0.8">EST. 2024</text>
+                            <line x1="392" y1="358" x2="392" y2="370" stroke="#1f2530" stroke-width="1"/>
+                            <text x="402" y="366" font-family="JetBrains Mono, monospace" font-size="9" fill="#FF6B35" letter-spacing="0.8">PRECISION</text>
+
+                        </svg>
+                    </div>
+                </div>
             </div>
         </section>
 
-
-    </section>
-    <section class="about-wrapper">
-        <div class="about-image">
-            <img src="image/index_image/people-collab.png" alt="People collaborating">
-        </div>
-        <div class="about-content">
-            <h2><span>Who We Are</span></h2>
-            <p>We train veterans to be the next generation of tech leaders. Our team consists of motivated veterans who
-                have been mentored to provide end-to-end technical solutions for businesses and individuals. From
-                initial concept to final implementation, we deliver expert results driven by a veteran-led workforce
-                committed to your success.</p>
-            <a href="company.html#our-story" class="read-story-btn">Read Our Story</a>
-        </div>
-    </section>
-    <!-- <section class="founder-section animate animate-slide-up">
-        <div class="founder-container">
-
-            <div class="founder-image animate animate-slide-left">
-                <img src="image/Rectangle 126.png" alt="Founder Image">
-                
-            </div>
-          
-            <div class="founder-content animate animate-slide-up">
-                <h2><stron>Founder’s Story</strong></h2>
-                <p><strong>Vasiliy S. Ivanov</strong> Born into a Russian-Ukrainian family, Vasiliy exhibited exceptional analytical abilities from an early age, consistently ranking high in mathematics and computer science.
-                    </p><p> His deep fascination with physics led him to study it extensively, honing a problem-solving mindset that seamlessly translates into his work in IT. This intellectual curiosity fuels his long-term ambition to pursue a Ph.D.
-                    in physics, applying scientific principles to drive future technological advancements.
-               </p>
-               
-            
-                
-               
-                <a href="company.html" class="read-more-btn">Read more</a>
-            </div>
-        </div>
-    </section>-->
-
-
-
-    <section class="services-section blocked animate animate-slide-up puppy-park">
-        <div class="services-header">OUR SERVICES</div>
-        <h1 class="services-title">Simplifying Technology for Your Business</h1>
-        <!-- <h2 class="services-subtitle">For Your Business</h2> -->
-
-        <p class="serve">At FNC, we provide cloud migration and optimization, custom website development, on-site IT
-            support, IT consulting, and much more to ensure your business operates efficiently and stays ahead.
-            <br><strong>Let us handle the tech while you focus on growth.</strong>
-        </p>
-
-        <div class="butts animate animate-slide-up puppy-park">
-            <div class="type kitty-box">IT Services</div>
-            <div class="type kitty-box" style="background-color: #27DAB7;">IT Services</div>
-            <div class="type kitty-box" style="background-color: #6E44FF;">DevOps</div>
-            <div class="type animate kitty-box" style="background-color: #FB421F;">Blockchain Development</div>
-
-            <div class="type kitty-box" style="background-color: #FFDC26;">Cloud Services</div>
-            <div class="type kitty-box" style="background-color: #C200C0; ">Custom Web Development</div>
-            <div class="type kitty-box" style="background-color: #6E44FF; ">Software Development</div>
-
-
-
-        </div>
-        <div class="blog-container new">
-
-            <div class="blog-card newer animate animate-slide-left">
-
-
-                <img src="image/custom-it.png" alt="A Veteran-Led, Self-Sustaining Future">
-
-
-            </div>
-            <!-- Blog 2 -->
-            <div class="blog-card newer animate animate-slide-up">
-
-
-                <img src="image/server.png" alt="The Observer’s Hand">
-
-
-            </div>
-            <!-- Blog 3 -->
-            <div class="blog-card newer animate animate-slide-up">
-
-
-                <img src="image/servicess.png" alt="MFA NFT Marketplace Whitepaper">
-
-
-
-            </div>
-        </div>
-
-        <i class="hgi hgi-solid hgi-question"></i>
-        <a href="services.html" style="color: white; text-decoration: none;"> <button
-                class="view-more animate animate-slide-up">View All Services</a>
-    </section>
-
-
-
-
-
-
-
-
-
-    <!--<section class="founder-section mfa animate animate-slide-up">
-        <div class="founder-container nft ">
-
-            <div class="founder-image animate animate-slide-left">
-                <img src="image/Cardano-blockchain.webp" alt="Founder Image">
-                
-            </div>
-          
-            <div class="founder-content ">
-                <h2 class="animate animate-slide-up"><stron>Blockchain MFA</strong></h2>
-                <p class="animate animate-slide-up"><strong>FNC's Blockchain MFA</strong> a decentralized, blockchain-powered MFA ecosystem, integrating World Mobile Token (WTMX) for authentication and Cardano-based NFTs for subscription-based access control. Customers will stake Token (FNC) to gain and retain access, distributing staking rewards to service providers 
-                    for a self-sustaining authentication infrastructure.</p>
-               
-<p class="animate animate-slide-up">By integrating Cardano smart contracts, NFTs, and WTMX-powered transactions, this system ensures cost efficiency, decentralization, and tamper-proof authentication.</p>                
-               
-                <a href="https://medium.com/@FNCLLC/mfa-nft-marketplace-a-new-era-of-decentralized-authentication-9442003a22d6" class="read-more-btn animate animate-slide-up">Read more</a>
-            </div>
-        </div>
-    </section>-->
-
-
-
-    <!--  <div class="container">
-        <div class="heder-section">
-            <h2>WHAT THEY SAID</h2>
-            <p style=" color: black;">Meet our clients from</p>
-            <p>around the globe</p>
-        </div> 
-
-
-        <div class="testimonials">
-            <div class="testimonial">
-                <p>"This looks amazing. Thanks so much!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22.png" alt="Jane Brad">
-                    <div class="client-info">
-                        Jane Brad <br> <span
-                            style="font-size: 14px; line-height: 16.42px;  font-family: Work Sans, serif">USA</span>
+        <section class="idx-about" aria-labelledby="idx-about-heading">
+            <div class="idx-container">
+                <div class="idx-about-grid fnc-reveal">
+                    <div class="idx-about-image">
+                        <img src="image/index_image/people-collab.png" alt="The FNC team collaborating" onerror="this.src='image/general_image/raw.png'">
+                    </div>
+                    <div class="idx-about-text">
+                        <div class="idx-section-tag">Who We Are</div>
+                        <h2 id="idx-about-heading">A small team. Real engineering. Built to last.</h2>
+                        <p>Five Nines Consulting is a veteran-founded technology company. We build products that solve real problems and take on consulting engagements where our discipline makes a measurable difference. PromptSentry, our AI security guardrail, is the first product to come out of that effort.</p>
+                        <p>We're small on purpose, focused on doing fewer things at a higher standard, with a long-term commitment to bringing more disciplined operators into engineering as the company grows.</p>
+                        <a href="company.html#our-story" class="idx-text-link">
+                            Read our full story <svg class="idx-link-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="testimonial">
-                <p>"This is the best so far. Thanks!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22 (5).png" alt="John Kevin">
-                    <div class="client-info">
-                        <strong>John Kevin</strong><br>Nigeria
+        </section>
+
+        <section class="idx-product" aria-labelledby="idx-product-heading">
+            <div class="idx-container">
+                <div class="idx-product-card dark-card fnc-reveal">
+                    <div class="idx-tag primary-tag">Our Flagship Product</div>
+                    <h2 id="idx-product-heading">PromptSentry, AI Security Guardrail</h2>
+                    <p>Protects AI applications from prompt injection, jailbreaks, PII leaks, and explicit content, with a multi-stage detection pipeline that delivers an AI-verified verdict in under 900ms (p50). Benchmarked on 2,700+ adversarial prompts with 98.92% attack defense accuracy.</p>
+                    <p class="idx-product-tagline">Built for educational platforms protecting kids, and enterprises protecting their workforce.</p>
+                    <div class="idx-card-actions">
+                        <a href="https://promptsentry.net" target="_blank" rel="noopener noreferrer" class="idx-btn solid-btn">
+                            Visit PromptSentry <svg class="idx-btn-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                        </a>
+                        <a href="https://promptsentry.net/request-demo.html" target="_blank" rel="noopener noreferrer" class="idx-btn outline-light-btn">Request a Demo</a>
                     </div>
                 </div>
             </div>
-            <div class="testimonial">
-                <p>"I'm so happy. This is just perfect!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22 (3).png" alt="Dominic Jade">
-                    <div class="client-info">
-                        <strong>Dominic Jade</strong><br>Italy
+        </section>
+
+        <section class="idx-services" aria-labelledby="idx-services-heading">
+            <div class="idx-container">
+                <div class="idx-section-header fnc-reveal">
+                    <div class="idx-section-tag">Our Services</div>
+                    <h2 id="idx-services-heading">Simplifying technology for your business</h2>
+                    <p>Beyond PromptSentry, FNC takes on consulting engagements across cloud migration, custom development, IT support, and infrastructure. Honest scoping. Real timelines. No surprises.</p>
+                </div>
+
+                <ul class="idx-capabilities fnc-reveal-stagger">
+                    <li class="idx-cap-tag"><i class="fa-solid fa-server" aria-hidden="true"></i> IT Services</li>
+                    <li class="idx-cap-tag"><i class="fa-solid fa-code-merge" aria-hidden="true"></i> DevOps</li>
+                    <li class="idx-cap-tag"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud Services</li>
+                    <li class="idx-cap-tag"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Custom Web Development</li>
+                    <li class="idx-cap-tag"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Software Development</li>
+                </ul>
+
+                <div class="idx-services-cta">
+                    <a href="services.html" class="idx-btn outline-btn">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="idx-quote" aria-label="What FNC stands for">
+            <div class="idx-container">
+                <div class="idx-quote-card fnc-reveal">
+                    <i class="fa-solid fa-quote-left idx-quote-mark" aria-hidden="true"></i>
+                    <blockquote>
+                        We don't sell hype. We ship products that work, take engagements we can deliver on, and tell you the truth about timelines and trade-offs. That's the discipline part.
+                    </blockquote>
+                    <div class="idx-quote-author">
+                        <div class="idx-quote-author-name">FNC team</div>
                     </div>
                 </div>
             </div>
-            <div class="testimonial">
-                <p>"This looks amazing. Thanks so much!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22 (4).png" alt="Brad Kevin">
-                    <div class="client-info">
-                        <strong>Brad Kevin</strong><br>USA
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <p>"I'm so happy. This is just perfect!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22 (3).png" alt="Dominic Jade">
+        </section>
 
-                    <div class="client-info">
-                        <strong>Dominic Jade</strong><br>Italy
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <p>"This looks amazing. Thanks so much!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22 (4).png" alt="Brad Kevin">
-                    <div class="client-info">
-                        <strong>Brad Kevin</strong><br>USA
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <p>"This looks amazing. Thanks so much!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22 (4).png" alt="Brad Kevin">
-                    <div class="client-info">
-                        <strong>Brad Kevin</strong><br>USA
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <p>"This is the best so far. Thanks!"</p>
-                <div class="client">
-                    <img src="image/index_image/Ellipse 22 (5).png" alt="John Kevin">
-                    <div class="client-info">
-                        <strong>John Kevin</strong><br>Nigeria
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- <section class="veteran-section animate animate-slide-up">
-        <div class=" veteran-text animate animate-slide-up">
-            <h2>Veterans Training and Community Building</h2>
-            <p>Whether you're here to learn, build, or contribute to a purpose-driven mission, there's a place for you
-                at Five Nines Consulting. </p>
-            <p>We’re creating something rare: a veteran-led, self-sustaining ecosystem where real-world problem-solving
-                meets resilient technology, sustainable living, and inclusive opportunity. This is not charity. This is
-                ownership. </p>
-            <a href="fnc-veteran-services.html" class="learner">Learn More<svg xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="none" stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.9"
-                        d="M4.5 12h15m0 0l-5.625-6m5.625 6l-5.625 6" />
-                </svg></a>
-        </div>
+    </main>
 
-    </section>-->
-
-    <!--<section class="mfa-section" data-zoom="true">
-        <div class="mfa-text">
-            <h2>Blockchain Multi-Factor <br><span style="color: #626262">Authentication</span> </h2>
-            <p>A decentralized identity and authentication platform powered by Cardano and WMTX.</p>
-        </div>
-        <div class="mfa-images-wrapper">
-            <div class="mfa-images animate animate-slide-left">
-                <img
-                    src="image/cardano-blockchain-logo-with-fnc-written_3qe1-MZ0Q7e_-oK-t6ZO5Q_UPTuzOpEQKSWlDLjl7DlWA.jpeg">
-
-                <img
-                    src="image/a-girl-holding-a-phone-and-ponting-the-p_4n4DUthJSKaDESYmEtPluA_205rknPZR82UhUby60g40g.jpeg">
-                <img
-                    src="image/a-laptop-screen-in-an-office-dispalying-_Ag7s2obhRmefq3pQSiU6Aw_luVrS7CjQDe02TUNjLyjPA.jpeg">
-
-            </div>
-        </div>
-
-        <a href="https://medium.com/@FNCLLC/mfa-nft-marketplace-a-new-era-of-decentralized-authentication-9442003a22d6">Learn
-            More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.9"
-                    d="M4.5 12h15m0 0l-5.625-6m5.625 6l-5.625 6" />
-            </svg></a>
-
-    </section> -->
-    <!-- <section class="new-blogs appear-effect">
-        <h2>Our Blog <br><span style="color: #626262;">Insights</span> </h2>
-        <div class="blog-insights animate animate-slide-up">
-            <a href="https://medium.com/@FNCLLC/a-veteran-led-self-sustaining-future-the-fnc-vision-d7322393c67a">
-                <div class="blog-post">
-                    <img src="image/veteran.png">
-                    <div class="blog-texts">
-                        <p>BLOG BY FNC TEAM</p>
-                        <h2>A Veteran-Led, Self-Sustaining Future</h2>
-                    </div>
-                </div>
-            </a>
-            <a href="https://medium.com/@FNCLLC/decentralized-mfa-using-cardano-and-wtmx-bfcec5266380">
-                <div class="blog-post">
-                    <img src="image/images (12).jpeg">
-                    <div class="blog-texts">
-                        <p>BLOG BY VASILIY S. IVANOV AND PRECIOUS O.</p>
-                        <h2>Blockchain MFA</h2>
-                    </div>
-                </div>
-            </a>
-            <a
-                href="https://medium.com/@FNCLLC/mfa-nft-marketplace-a-new-era-of-decentralized-authentication-9442003a22d6">
-                <div class="blog-post last">
-                    <img
-                        src="image/a-product-landing-page-for-a-blockchain-_Ugwu8iMuTluTTP6OLyJxAw_luVrS7CjQDe02TUNjLyjPA.jpg">
-                    <div class="blog-texts">
-                        <p>BLOG BY VASILIY S. IVANOV AND PRECIOUS O.</p>
-                        <h2>Decentralized MFA Using Cardano and WTMX</h2>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-    </section>-->
-
-    <div class="image-caption-container animate animate-slide-up">
-        <img src="image/index_image/Rectangle 123.png" style="max-width: 90vw;" alt="Team Discussion">
-        <p class="image-caption animate animate-slide-up">
-            <i>FNC delivers services through a client-focused approach, ensuring transparency, collaboration, and
-                tailored solutions.
-                We prioritize secure, efficient, scalable cybersecurity and IT solutions while offering continuous
-                support and expertise to meet clients’ needs.</i>
-        </p>
-    </div>
-
-    <!--<div class="services-header animate animate-slide-up">Blog</div>
-    <h1 class="services-title animate animate-slide-up">Insights</h1>
-
-    <section class="blog-section animate animate-slide-up">
-        
-        
-        <div class="blog-container">
-
-            <div class="blog-card">
-                <a href="https://medium.com/@FNCLLC/a-veteran-led-self-sustaining-future-the-fnc-vision-d7322393c67a" class="linker">
-
-                <img src="image/veteran.png" alt="A Veteran-Led, Self-Sustaining Future">
-                <p class="blog-meta">BLOG BY FNC TEAM</p>
-                <h3>A Veteran-Led, Self-Sustaining Future</h3>
-            </a>
-            </div>
-            <div class="blog-card">
-                <a href="https://medium.com/@FNCLLC" class="linker">
-
-                <img src="blog/images/Frame 26088187.png" alt="The Observer’s Hand">
-                <p class="blog-meta">BLOG BY VASILIY S. IVANOV AND PRECIOUS O.</p>
-                <h3>The Observer’s Hand</h3>
+    <footer class="fnc-footer-clean">
+        <div class="fnc-footer-inner">
+            <div class="fnc-footer-brand">
+                <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting" class="fnc-footer-logo">
+                <p class="fnc-footer-tagline">Building technology products with discipline and craft.</p>
+                <a href="https://promptsentry.net" target="_blank" rel="noopener noreferrer" class="fnc-footer-product-card">
+                    <span class="fnc-footer-product-label">Our Product</span>
+                    <span class="fnc-footer-product-name">PromptSentry, AI Security Guardrail <span class="arrow" aria-hidden="true">→</span></span>
                 </a>
             </div>
-            <div class="blog-card">
-                <a href="" class="linker">
-
-                <img src="image/images (12).jpeg" alt="The Observer’s Hand">
-                <p class="blog-meta">BLOG BY VASILIY S. IVANOV AND PRECIOUS O.</p>
-                <h3>Blockchain MFA</h3>
-                </a>
+            <div class="fnc-footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="company.html">About FNC</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="fnc-veteran-services.html">Work With Us</a></li>
+                    <li><a href="https://medium.com/@FNCLLC" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                </ul>
+            </div>
+            <div class="fnc-footer-col">
+                <h4>Get in touch</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li>Roanoke, VA, United States</li>
+                </ul>
             </div>
         </div>
-    </section>-->
-
-    <footer class="footer">
-        <div class="contact-us">
-            <h3>CONTACT US</h3>
-            <hr>
+        <div class="fnc-footer-bottom">
+            <p>© 2026 Five Nines Consulting LLC</p>
         </div>
-        <div class="container">
-
-
-            <div class="footer-container">
-                <div class="footer-column">
-
-                    <img src="image/general_image/five nine.png" alt="Five Nines Consulting" class="footer-logo">
-                    <div class="social-links">
-                        <!-- <a href="https://x.com/fncnodeos" target="_blank"> X</a><br> -->
-                        <a href="https://www.linkedin.com/in/vasiliy-s-ivanov/" target="_blank"> LinkedIn</a><br>
-                        <a href="https://www.facebook.com/share/1FNtTRnNj4/" target="_blank"> Facebook</a><br>
-
-                    </div>
-
-                </div>
-
-                <div class="footer-column">
-                    <h3> Quick links</h3>
-                    <div class="quick-links">
-
-                        <a href="https://fiveninesconsulting.io">Home</a><br>
-                        <a href="services.html">Services</a><br>
-                        <a href="company.html">Company</a><br>
-                        <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor">Contact
-                            Us</a><br>
-                        <a href="https://medium.com/@FNCLLC">Blog</a><br>
-
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Location</h3>
-                    <div class="lokation">
-
-                        <p class="mails">Roanoke, VA</p>
-                    </div>
-                    <div class="footer-column news">
-                        <!--  <h3>Get in touch</h3>
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor" class="mails">Get in touch</a>
-                    --><h3 style=" margin-top: 15px;">Phone</h3>
-                        <p class="mails">703-309-6460</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <hr>
-            <p>© 2025 FNC</p>
-        </div>
-
     </footer>
 
+    <style>
+        body { font-family: 'Work Sans', sans-serif; background: #fafafa; margin: 0; color: #333; }
+        main { display: block; }
+        .idx-container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #111; margin-top: 0; }
+        p { line-height: 1.65; color: #555; }
+
+        .navbar-logo { height: 48px; width: auto; }
+
+        .idx-btn { display: inline-flex; align-items: center; gap: 6px; text-align: center; padding: 14px 28px; font-weight: 600; border-radius: 8px; text-decoration: none; transition: all 0.2s ease; font-size: 15px; }
+        .idx-btn-icon { width: 14px; height: 14px; }
+        .solid-btn { background: #FF6B35; color: white; border: 2px solid #FF6B35; }
+        .solid-btn:hover { background: #e85a26; border-color: #e85a26; transform: translateY(-1px); }
+        .outline-btn { background: transparent; color: #111; border: 2px solid #111; }
+        .outline-btn:hover { background: #111; color: white; }
+        .outline-light-btn { background: transparent; color: white; border: 2px solid white; }
+        .outline-light-btn:hover { background: white; color: #111; }
+        .idx-text-link { color: #FF6B35; font-weight: 600; text-decoration: none; font-size: 15px; display: inline-flex; align-items: center; gap: 6px; }
+        .idx-text-link:hover { color: #e85a26; text-decoration: underline; }
+        .idx-link-icon { width: 14px; height: 14px; }
+
+        .idx-section-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #FF6B35;
+            margin-bottom: 14px;
+            position: relative;
+            padding-left: 28px;
+        }
+        .idx-section-tag::before {
+            content: ''; position: absolute; left: 0; top: 50%;
+            width: 20px; height: 2px;
+            background: #FF6B35; transform: translateY(-50%);
+        }
+
+        /* ============================================
+           Hero, with atmospheric orange bleed
+           ============================================ */
+        .idx-hero {
+            padding: 88px 0 100px;
+            background: #fafaf7;
+            border-bottom: 1px solid #eaeae5;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+        }
+        .idx-hero-glow-bg {
+            position: absolute;
+            top: -300px;
+            right: -250px;
+            width: 900px;
+            height: 900px;
+            background:
+                radial-gradient(circle at 35% 50%, rgba(255, 107, 53, 0.18), transparent 55%),
+                radial-gradient(circle at 60% 70%, rgba(255, 138, 92, 0.12), transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(40px);
+        }
+        .idx-hero::before {
+            content: '';
+            position: absolute;
+            bottom: -250px; left: -150px;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(26, 31, 46, 0.04), transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .idx-hero .idx-container { position: relative; z-index: 2; }
+
+        .idx-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.05fr;
+            gap: 64px;
+            align-items: center;
+            position: relative;
+        }
+        .idx-hero-content {
+            position: relative;
+            text-align: left;
+        }
+        .idx-hero-visual {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 5 / 4;
+        }
+        .idx-hero-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 12px;
+            background: #0d1117;
+            box-shadow:
+                0 30px 80px rgba(13, 17, 23, 0.22),
+                0 0 80px -10px rgba(255, 107, 53, 0.25),
+                0 0 0 1px rgba(255, 107, 53, 0.12);
+        }
+
+        .idx-hero h1 {
+            font-size: clamp(40px, 5.4vw, 64px);
+            font-weight: 800;
+            line-height: 1.02;
+            margin-bottom: 22px;
+            letter-spacing: -0.035em;
+            color: #1a1f2e;
+        }
+        .idx-h1-accent { color: #FF6B35; }
+        .idx-hero-sub {
+            font-size: 17px;
+            color: #555;
+            max-width: 540px;
+            margin: 0 0 32px 0;
+            line-height: 1.65;
+        }
+        .idx-hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 0; }
+
+        /* ============================================
+           Rest of page
+           ============================================ */
+        .idx-about { padding: 88px 0; background: #fafafa; }
+        .idx-about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 56px;
+            align-items: center;
+            background: white;
+            padding: 48px;
+            border-radius: 20px;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+        }
+        .idx-about-image img { width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .idx-about-text h2 {
+            font-size: clamp(26px, 2.8vw, 34px);
+            line-height: 1.2;
+            margin-bottom: 18px;
+            letter-spacing: -0.01em;
+        }
+        .idx-about-text p { margin-bottom: 16px; }
+
+        .idx-product { padding: 76px 0; background: white; }
+        .idx-product-card { padding: 56px 48px; border-radius: 20px; }
+        .dark-card {
+            background: linear-gradient(135deg, #0d1117, #1a1f2e);
+            border: 1px solid #2a3142;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .dark-card::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -10%;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.12), transparent 60%);
+            pointer-events: none;
+        }
+        .dark-card h2 {
+            color: white;
+            font-size: clamp(28px, 3vw, 38px);
+            margin-bottom: 22px;
+            letter-spacing: -0.01em;
+            position: relative;
+        }
+        .dark-card p { color: #aaa; font-size: 16px; max-width: 820px; position: relative; }
+        .idx-product-tagline { color: white !important; font-weight: 600; margin-bottom: 32px; }
+        .idx-tag { display: inline-block; padding: 6px 14px; font-size: 11px; font-weight: 700; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 22px; }
+        .primary-tag { background: rgba(255, 107, 53, 0.15); color: #FF6B35; border: 1px solid rgba(255, 107, 53, 0.3); }
+        .idx-card-actions { display: flex; gap: 14px; flex-wrap: wrap; position: relative; }
+
+        .idx-services { padding: 76px 0; background: #fafafa; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .idx-section-header { text-align: center; max-width: 720px; margin: 0 auto 44px; }
+        .idx-section-header .idx-section-tag { display: inline-block; padding-left: 28px; padding-right: 28px; }
+        .idx-section-header .idx-section-tag::after {
+            content: ''; position: absolute; right: 0; top: 50%;
+            width: 20px; height: 2px;
+            background: #FF6B35; transform: translateY(-50%);
+        }
+        .idx-section-header h2 {
+            font-size: clamp(28px, 3.2vw, 38px);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+        .idx-section-header p { font-size: 16px; max-width: 600px; margin: 0 auto; }
+
+        .idx-capabilities { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; max-width: 920px; margin: 0 auto; list-style: none; padding: 0; }
+        .idx-cap-tag {
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: 12px 22px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+        }
+        .idx-cap-tag:hover {
+            border-color: #FF6B35;
+            color: #FF6B35;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.1);
+        }
+        .idx-cap-tag i { color: #FF6B35; font-size: 14px; }
+        .idx-services-cta { text-align: center; margin-top: 48px; }
+
+        .idx-quote { padding: 80px 0 96px; background: white; }
+        .idx-quote-card {
+            max-width: 820px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 56px 32px;
+            position: relative;
+        }
+        .idx-quote-mark {
+            font-size: 48px;
+            color: rgba(255, 107, 53, 0.3);
+            margin-bottom: 24px;
+            display: block;
+        }
+        .idx-quote-card blockquote {
+            margin: 0 0 24px;
+            font-size: clamp(20px, 2.2vw, 26px);
+            line-height: 1.5;
+            color: #222;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: -0.01em;
+        }
+        .idx-quote-author-name {
+            font-size: 13px;
+            color: #888;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
+
+        .fnc-footer-clean { background: #0a0a0a; padding: 56px 24px 24px; border-top: 1px solid #2a2a2a; color: #d1d5db; margin: 0; }
+        .fnc-footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 64px; padding-bottom: 40px; border-bottom: 1px solid #2a2a2a; }
+        .fnc-footer-brand { display: flex; flex-direction: column; gap: 18px; }
+       .fnc-footer-logo { 
+            height: 56px; 
+            width: auto; 
+            max-width: 200px; 
+            display: block;
+            background: #f3f4f6; 
+            padding: 8px 12px; 
+            border-radius: 8px; 
+            align-self: flex-start; 
+        }
+        .fnc-footer-tagline { font-size: 13.5px; color: #9ca3af; margin: 0; }
+        .fnc-footer-product-card { display: inline-flex; flex-direction: column; padding: 12px 16px; background: rgba(255, 107, 53, 0.08); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 8px; text-decoration: none; width: fit-content; transition: all 0.2s; }
+        .fnc-footer-product-card:hover { background: rgba(255, 107, 53, 0.12); transform: translateY(-1px); }
+        .fnc-footer-product-label { font-size: 10px; color: #FF6B35; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+        .fnc-footer-product-name { color: #f3f4f6; font-size: 14px; font-weight: 500; }
+        .fnc-footer-col h4 { font-size: 12px; text-transform: uppercase; color: #f3f4f6; margin-bottom: 18px; letter-spacing: 0.08em; }
+        .fnc-footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+        .fnc-footer-col a, .fnc-footer-col li { color: #9ca3af; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+        .fnc-footer-col a:hover { color: white; }
+        .fnc-footer-bottom { text-align: center; margin-top: 24px; font-size: 12px; color: #6b7280; }
+
+        @media (max-width: 860px) {
+            .idx-hero { padding: 56px 0 64px; }
+            .idx-hero-grid { grid-template-columns: 1fr; gap: 48px; }
+            .idx-hero-content { text-align: left; }
+            .idx-hero-sub { margin: 0 0 32px 0; }
+            .idx-hero-actions { justify-content: flex-start; }
+            .idx-hero h1 { font-size: clamp(36px, 9vw, 56px); }
+            .idx-hero-visual { max-width: 480px; margin: 0 auto; }
+
+            .idx-about-grid { grid-template-columns: 1fr; text-align: center; padding: 32px 22px; gap: 32px; }
+            .idx-about-text { order: -1; }
+            .idx-product-card { padding: 36px 24px; text-align: center; }
+            .idx-card-actions { justify-content: center; }
+            .idx-section-tag, .idx-section-tag::before, .idx-section-tag::after { padding-left: 0; padding-right: 0; }
+            .idx-section-tag::before, .idx-section-tag::after { display: none; }
+            .idx-quote-card { padding: 36px 16px; }
+            .fnc-footer-inner { grid-template-columns: 1fr; gap: 36px; }
+        }
+    </style>
+
+    <script>
+        (function () {
+            const btn = document.querySelector('.menu-button');
+            const links = document.querySelector('.nav-links');
+            if (!btn || !links) return;
+
+            window.toggleMenu = function () {
+                const isOpen = links.classList.toggle('open');
+                btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            };
+        })();
+    </script>
+
+    <script src="script-motion.js"></script>
     <script src="script.js"></script>
 </body>
 

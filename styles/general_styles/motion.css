@@ -1,0 +1,86 @@
+/* ============================================
+   FNC Motion System
+   Subtle, purposeful animations for engineering credibility.
+   Respects prefers-reduced-motion.
+   ============================================ */
+
+html { scroll-behavior: smooth; }
+
+/* Base reveal — fade + lift (more displacement, slightly longer for visibility) */
+.fnc-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+.fnc-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered children — each direct child reveals 120ms after the previous */
+.fnc-reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fnc-reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+.fnc-reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 120ms; }
+.fnc-reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 240ms; }
+.fnc-reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 360ms; }
+.fnc-reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 480ms; }
+.fnc-reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 600ms; }
+.fnc-reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Subtle lift accent for tag pill / eyebrow when revealed */
+.fnc-reveal .vet-eyebrow,
+.fnc-reveal .cmp-eyebrow,
+.fnc-reveal .srv-eyebrow,
+.fnc-reveal .idx-hero-eyebrow,
+.fnc-reveal .fnd-eyebrow {
+    transition-delay: 100ms;
+}
+
+/* Number counter — used by the JS counter system */
+.fnc-counter {
+    display: inline-block;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Image hover — subtle zoom on cards with .fnc-hover-zoom */
+.fnc-hover-zoom { overflow: hidden; border-radius: inherit; }
+.fnc-hover-zoom img {
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+.fnc-hover-zoom:hover img { transform: scale(1.04); }
+
+/* Safety net — if JS fails to load, content reveals after 2 seconds */
+@keyframes fnc-fallback-reveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+.fnc-reveal:not(.is-visible) {
+    animation: fnc-fallback-reveal 700ms cubic-bezier(0.22, 1, 0.36, 1) 2s forwards;
+}
+.fnc-reveal-stagger:not(.is-visible) > * {
+    animation: fnc-fallback-reveal 700ms cubic-bezier(0.22, 1, 0.36, 1) 2s forwards;
+}
+
+/* Respect reduced motion preferences (accessibility) */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .fnc-reveal,
+    .fnc-reveal-stagger > * {
+        opacity: 1;
+        transform: none;
+        transition: none;
+        animation: none;
+    }
+    .fnc-hover-zoom img { transition: none; }
+    .fnc-hover-zoom:hover img { transform: none; }
+}
