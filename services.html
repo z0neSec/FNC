@@ -47,7 +47,7 @@
             <div class="srv-hero-glow" aria-hidden="true"></div>
             <div class="srv-container srv-hero-inner fnc-reveal">
                 <h1 id="srv-hero-heading">Products &amp; Services <br>that fit <span class="srv-h1-accent">your stage.</span></h1>
-                <p class="srv-hero-sub">PromptSentry for AI security, plus consulting engagements across cloud migration, custom development, and infrastructure. Built and delivered with the engineering discipline FNC is named for.</p>
+                <p class="srv-hero-sub">PromptSentry for AI security, plus consulting engagements across AI infrastructure, cloud, and custom development. Built and delivered with the engineering discipline FNC is named for.</p>
                 <div class="srv-hero-actions">
                     <a href="#srv-offer" class="srv-btn solid-btn">
                         See What We Offer <svg class="srv-btn-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
@@ -61,7 +61,7 @@
             <div class="srv-container">
                 <div class="srv-section-header fnc-reveal">
                     <h2 id="srv-offer-heading">What We Offer</h2>
-                    <p>Our flagship product plus the consulting engagements we take on alongside it.</p>
+                    <p>Our flagship AI security product, and the consulting work we take on alongside it.</p>
                 </div>
 
                 <div class="srv-grid-3 fnc-reveal-stagger">
@@ -81,9 +81,9 @@
                     </div>
 
                     <div class="srv-product-card">
-                        <div class="srv-product-tag secondary-tag">Development</div>
-                        <h3>Custom Website Development</h3>
-                        <p class="srv-card-text">Fully functional, professionally designed, and securely hosted websites built to your specifications. Optimized for speed, security, and scalable growth.</p>
+                        <div class="srv-product-tag secondary-tag">Consulting</div>
+                        <h3>AI Infrastructure Consulting</h3>
+                        <p class="srv-card-text">LLM deployment guidance, model selection, pipeline architecture, and AI integration into existing systems. For teams shipping AI in production who need careful engineering at the foundation, not bolted on after.</p>
 
                         <div class="srv-card-actions">
                             <a href="contact.html" class="srv-btn outline-btn">Contact Us</a>
@@ -94,6 +94,16 @@
                         <div class="srv-product-tag secondary-tag">Consulting</div>
                         <h3>Cloud Migration &amp; Optimization</h3>
                         <p class="srv-card-text">Migration to modern cloud infrastructure, performance optimization, zero-trust architecture, and cost-effective cloud solutions for growing businesses.</p>
+
+                        <div class="srv-card-actions">
+                            <a href="contact.html" class="srv-btn outline-btn">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="srv-product-card">
+                        <div class="srv-product-tag secondary-tag">Development</div>
+                        <h3>Custom Website Development</h3>
+                        <p class="srv-card-text">Fully functional, professionally designed, and securely hosted websites built to your specifications. Optimized for speed, security, and scalable growth.</p>
 
                         <div class="srv-card-actions">
                             <a href="contact.html" class="srv-btn outline-btn">Contact Us</a>
@@ -235,18 +245,20 @@
             background: #FF6B35; transform: translateY(-50%);
         }
 
+        /* 🔴 BUTTON FIX APPLIED HERE 🔴 */
         .srv-btn {
             display: inline-flex;
             align-items: center;
             gap: 6px;
             text-align: center;
-            padding: 14px 28px;
+            padding: 12px 18px; /* Reduced padding slightly to prevent wrapping */
             font-weight: 600;
             border-radius: 8px;
             text-decoration: none;
             transition: all 0.2s ease;
             width: fit-content;
-            font-size: 15px;
+            font-size: 14px; /* Reduced from 15px to ensure it fits */
+            white-space: nowrap; /* Forces text to stay on one line */
         }
         .srv-btn-icon { width: 14px; height: 14px; }
         .solid-btn { background: #FF6B35; color: white; border: 2px solid #FF6B35; }
@@ -255,9 +267,11 @@
         .outline-btn:hover { background: #111; color: white; }
         .ghost-btn { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.3); }
         .ghost-btn:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.6); }
+        
+        /* 🔴 LINK FIX APPLIED HERE 🔴 */
         .srv-text-link {
             color: #FF6B35;
-            font-size: 14px;
+            font-size: 13px; /* Reduced to ensure it stays on one line */
             font-weight: 600;
             text-decoration: none;
             display: inline-flex;
@@ -265,6 +279,7 @@
             gap: 4px;
             margin-top: 4px;
             transition: color 0.2s, transform 0.2s;
+            white-space: nowrap; /* Forces text to stay on one line */
         }
         .srv-text-link:hover { color: #e85a26; transform: translateX(2px); }
         .srv-link-icon { width: 14px; height: 14px; }
@@ -326,14 +341,16 @@
         /* Offer cards grid */
         .srv-grid-3 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
         }
 
         .srv-offer { padding: 80px 0; background: #fafafa; position: relative; scroll-margin-top: 80px; }
+        
+        /* 🔴 CARD FIX APPLIED HERE 🔴 */
         .srv-product-card {
             background: white;
-            padding: 36px 32px;
+            padding: 28px 20px; /* Reduced from 32px 24px to give inner elements more horizontal room */
             border-radius: 14px;
             border: 1px solid #eaeaea;
             display: flex;
@@ -384,7 +401,7 @@
             border: 1px solid #e5e7eb;
         }
         .srv-product-card h3 {
-            font-size: 22px;
+            font-size: 19px;
             margin-bottom: 14px;
             letter-spacing: -0.01em;
             line-height: 1.25;
@@ -396,7 +413,7 @@
             color: #777;
             margin-top: 4px;
         }
-        .srv-card-text { flex-grow: 1; margin-bottom: 28px; font-size: 14.5px; }
+        .srv-card-text { flex-grow: 1; margin-bottom: 24px; font-size: 13.5px; }
         .srv-card-actions {
             display: flex;
             flex-direction: column;
@@ -513,15 +530,15 @@
         .fnc-footer-clean { background: #0a0a0a; padding: 56px 24px 24px; border-top: 1px solid #2a2a2a; color: #d1d5db; margin: 0; }
         .fnc-footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 64px; padding-bottom: 40px; border-bottom: 1px solid #2a2a2a; }
         .fnc-footer-brand { display: flex; flex-direction: column; gap: 18px; }
-       .fnc-footer-logo { 
-            height: 56px; 
-            width: auto; 
-            max-width: 200px; 
+       .fnc-footer-logo {
+            height: 56px;
+            width: auto;
+            max-width: 200px;
             display: block;
-            background: #f3f4f6; 
-            padding: 8px 12px; 
-            border-radius: 8px; 
-            align-self: flex-start; 
+            background: #f3f4f6;
+            padding: 8px 12px;
+            border-radius: 8px;
+            align-self: flex-start;
         }
         .fnc-footer-tagline { font-size: 13.5px; color: #9ca3af; margin: 0; }
         .fnc-footer-product-card { display: inline-flex; flex-direction: column; padding: 12px 16px; background: rgba(255, 107, 53, 0.08); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 8px; text-decoration: none; width: fit-content; transition: all 0.2s; }
