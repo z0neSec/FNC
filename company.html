@@ -4,680 +4,487 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNC | Company</title>
+    <title>FNC | The Company</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="icon" type="image/svg+xml" href="image/general_image/fnc-logo.svg">
-    <link rel="apple-touch-icon" href="image/general_image/fnc-logo.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/general_image/raw.png">
+    <link rel="apple-touch-icon" href="image/general_image/raw.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/general_styles/nav_styles.css?v=2">
-    <link rel="stylesheet" href="styles/general_styles/motion.css">
+    <link rel="stylesheet" href="styles/general_styles/nav_styles.css">
+    <link rel="stylesheet" href="styles/index_styles/styles.css">
+    <link rel="stylesheet" href="styles/general_styles/footer.css">
+    <link rel="stylesheet" href="styles/company_styles/styles.css">
 </head>
 
 <body>
 
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-        <defs>
-            <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-            </symbol>
-        </defs>
-    </svg>
-
     <nav class="navbar">
-        <div class="navbar-brand">
-            <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting logo" class="navbar-logo">
+        <div class="navbar-brand animate animate-slide-left">
+            <img src="image/general_image/newlogo.png" alt="Five Nines Consulting Logo">
         </div>
-        <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="company.html" class="active" aria-current="page">Company</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="work-with-us.html">Work With Us</a></li>
-            <li><a href="contact.html" class="cont">Contact Us</a></li>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links appear-effect">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="company.html" class="active">Company</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="fnc-veteran-services.html" class="active kitty-bx">Work With Us</a></li>
+
+            <!-- <li><a href="blockchain-MFA.html" class="active">Blockchain MFA</a></li> -->
+
+            <!-- <li><a href="https://medium.com/@FNCLLC" class="active kitty-bx">Blog</a></li> -->
+
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf_AwkTXJKU8YaObX6qcLstuJmSsATjNp_amhXu4SMuJ6lNdg/viewform?usp=publish-editor"
+                    class="active cont appear-effect">Contact Us</a></li>
         </ul>
+
     </nav>
 
-    <main>
+    <section class="hero-company">
+        <div class="company-intro-row">
+            <div class="company-text">
+                <h2 class="appear-effect">Company <span style="color: #626262;">Overview</span>
+                </h2>
 
-        <section class="cmp-hero" aria-labelledby="cmp-hero-heading">
-           <div class="cmp-hero-bg" aria-hidden="true">
-                <svg viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <pattern id="isoGrid" width="56" height="32.33" patternUnits="userSpaceOnUse" patternTransform="translate(0 0)">
-                            <path d="M28 0L56 16.16L28 32.33L0 16.16Z" fill="none" stroke="#eef0f3" stroke-width="1"/>
-                        </pattern>
-
-                        <g id="c-light">
-                            <polygon points="28,0 56,16.16 56,56.16 28,72.33 0,56.16 0,16.16" fill="#f6f7f9" stroke="#cbd2da" stroke-width="1.1"/>
-                            <polygon points="28,0 56,16.16 28,32.33 0,16.16" fill="#ffffff" stroke="#cbd2da" stroke-width="1.1"/>
-                            <polygon points="56,16.16 56,56.16 28,72.33 28,32.33" fill="#eceef1" stroke="#cbd2da" stroke-width="1.1"/>
-                        </g>
-                        <g id="c-dark">
-                            <polygon points="28,0 56,16.16 56,56.16 28,72.33 0,56.16 0,16.16" fill="#1a1f2e" stroke="#0a0d14" stroke-width="1.1"/>
-                            <polygon points="28,0 56,16.16 28,32.33 0,16.16" fill="#2a3142" stroke="#0a0d14" stroke-width="1.1"/>
-                            <polygon points="56,16.16 56,56.16 28,72.33 28,32.33" fill="#10141e" stroke="#0a0d14" stroke-width="1.1"/>
-                        </g>
-                        <g id="c-orange">
-                            <polygon points="28,0 56,16.16 56,56.16 28,72.33 0,56.16 0,16.16" fill="rgba(255,107,53,0.06)" stroke="#FF6B35" stroke-width="1.4"/>
-                            <polygon points="28,0 56,16.16 28,32.33 0,16.16" fill="rgba(255,107,53,0.18)" stroke="#FF6B35" stroke-width="1.4"/>
-                            <polygon points="56,16.16 56,56.16 28,72.33 28,32.33" fill="rgba(255,107,53,0.30)" stroke="#FF6B35" stroke-width="1.4"/>
-                        </g>
-                    </defs>
-
-                    <rect width="100%" height="100%" fill="url(#isoGrid)"/>
-
-                    <g stroke="#cbd2da" stroke-width="1.6" stroke-dasharray="5 5" fill="none" opacity="0.9">
-                        <path d="M 812 250 L 924 185" />
-                        <path d="M 924 185 L 1036 250" />
-                        <path d="M 812 250 L 812 315" />
-                        <path d="M 924 185 L 924 120" />
-                    </g>
-                    <g stroke="#FF6B35" stroke-width="1.6" stroke-dasharray="5 5" fill="none">
-                        <path d="M 924 185 L 868 152" />
-                    </g>
-
-                    <circle cx="924" cy="120" r="4.5" fill="#FF6B35"/>
-                    <circle cx="924" cy="120" r="11" fill="none" stroke="#FF6B35" stroke-width="1.2" opacity="0.4"/>
-
-                    <use href="#c-dark"   x="896" y="148" />
-                    <use href="#c-light"  x="784" y="213" />
-                    <use href="#c-light"  x="1008" y="213" />
-                    <use href="#c-orange" x="840" y="120" />
-                    <use href="#c-dark"   x="952" y="120" />
-                    <use href="#c-light"  x="896" y="278" />
-                </svg>
-            </div>
-
-            <div class="cmp-container cmp-hero-wrap fnc-reveal">
-                <div class="cmp-hero-content">
-                    <h1 id="cmp-hero-heading">Discipline in <br><span class="cmp-h1-accent">Engineering.</span></h1>
-                    <p class="cmp-hero-sub">Five Nines Consulting is an AI-infrastructure startup building security products for the next generation of AI deployments. PromptSentry, our flagship product, is the first to ship. Alongside it, we take on consulting engagements where engineering discipline changes the outcome.</p>
+                <div class="mission-block appear-effect">
+                    <h3>The Mission</h3>
+                    <p>Five Nines Consulting is a veteran-led technology and training firm dedicated to bridging the gap
+                        between military service and the tech industry. The company operates on a "learn-by-doing"
+                        model,
+                        where veterans are mentored in high-level technical disciplines and then directly carry out
+                        project
+                        activities for clients.</p>
                 </div>
             </div>
-        </section>
 
-        <section class="cmp-identity" aria-label="Company identity pillars">
-            <div class="cmp-container">
-                <div class="cmp-grid-3 fnc-reveal-stagger">
-                    <div class="cmp-card">
-                        <i class="fa-solid fa-shield-halved cmp-icon" aria-hidden="true"></i>
-                        <h3>Product First</h3>
-                        <p>We build AI infrastructure products that solve real problems. PromptSentry is our flagship. Future products will share the same DNA.</p>
-                    </div>
-                    <div class="cmp-card">
-                        <i class="fa-solid fa-compress cmp-icon" aria-hidden="true"></i>
-                        <h3>Small by Design</h3>
-                        <p>We're a small, focused team on purpose. Fewer projects at a higher standard, with direct access to the people doing the work.</p>
-                    </div>
-                    <div class="cmp-card">
-                        <i class="fa-solid fa-server cmp-icon" aria-hidden="true"></i>
-                        <h3>The Five Nines Standard</h3>
-                        <p>Our name reflects the industry standard for high availability, 99.999% uptime. A commitment to reliability across everything we ship.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cmp-story" id="our-story" aria-labelledby="cmp-story-heading">
-            <div class="cmp-container">
-                <div class="cmp-story-grid fnc-reveal">
-                    <div class="cmp-story-left">
-                        <h2 id="cmp-story-heading">Our Mission <br>&amp; Story</h2>
-                        <div class="cmp-story-image-wrap">
-                            <img src="image/Frame 26088347.png" alt="FNC team collaboration" onerror="this.src='image/general_image/raw.png'">
-                        </div>
-                    </div>
-
-                    <div class="cmp-story-text">
-                        <p class="lead-text">FNC was founded by Vasiliy Ivanov on the idea that the discipline of careful engineering belongs at the foundation of AI systems, not bolted on after the fact.</p>
-                        <p>AI is being deployed into classrooms, healthcare workflows, and enterprise systems faster than the safety layers meant to protect the people using it. That gap is an engineering problem with measurable failure modes and measurable defenses. FNC was built to take on problems of that shape.</p>
-                        <p>Our first product, <strong>PromptSentry</strong>, is the result of that focus: a multi-stage AI security guardrail used by educational platforms protecting kids and enterprise teams protecting their workforce. Alongside the product, we take on consulting engagements in AI deployment, cloud, and security where careful engineering changes the outcome.</p>
-                        <p>We are also designing a veteran training framework, a long-term commitment to bringing more disciplined operators into engineering as the company grows. The framework is in active development. <a href="work-with-us.html" class="cmp-inline-link">Read more about it on the Work With Us page</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cmp-values" aria-labelledby="cmp-values-heading">
-            <div class="cmp-container">
-                <div class="cmp-section-header fnc-reveal">
-                    <h2 id="cmp-values-heading">Core Values</h2>
-                    <p>The operational principles that govern how we build products and how we serve our clients.</p>
-                </div>
-                <div class="cmp-grid-2x2 fnc-reveal-stagger">
-                    <div class="cmp-value-card">
-                        <div class="cmp-value-header">
-                            <i class="fa-solid fa-crosshairs cmp-icon" aria-hidden="true"></i>
-                            <h3>Precision</h3>
-                        </div>
-                        <p>Every product and every system we ship is engineered for uptime, integrity, and transparency.</p>
-                    </div>
-                    <div class="cmp-value-card">
-                        <div class="cmp-value-header">
-                            <i class="fa-solid fa-stopwatch cmp-icon" aria-hidden="true"></i>
-                            <h3>Discipline</h3>
-                        </div>
-                        <p>Clear specs, measurable outcomes, honest claims, no shortcuts. We claim what we can prove and ship what we claim.</p>
-                    </div>
-                    <div class="cmp-value-card">
-                        <div class="cmp-value-header">
-                            <i class="fa-solid fa-mountain-sun cmp-icon" aria-hidden="true"></i>
-                            <h3>Purpose</h3>
-                        </div>
-                        <p>No project is just a deliverable. It's part of a broader goal to protect users and build systems that last beyond the launch.</p>
-                    </div>
-                    <div class="cmp-value-card">
-                        <div class="cmp-value-header">
-                            <i class="fa-solid fa-shield-halved cmp-icon" aria-hidden="true"></i>
-                            <h3>Security</h3>
-                        </div>
-                        <p>From AI safety at the product layer to zero-trust deployments, security is embedded by design, never bolted on.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cmp-what-we-do" aria-labelledby="cmp-wwd-heading">
-            <div class="cmp-container">
-                <div class="cmp-section-header fnc-reveal">
-                    <h2 id="cmp-wwd-heading">What We Do</h2>
-                    <p>One flagship product, and the consulting work that lives alongside it.</p>
-                </div>
-
-                <div class="cmp-grid-2 fnc-reveal-stagger">
-                    <div class="cmp-product-card">
-                        <div class="cmp-product-tag primary-tag">Our Flagship</div>
-                        <h3>AI Security (PromptSentry)</h3>
-                        <p>A multi-stage AI security guardrail for educational and enterprise AI applications. Built to protect against prompt injection, jailbreaks, PII leaks, and harmful content, with 98.92% attack defense across 1,850 adversarial prompts.</p>
-                        <a href="https://promptsentry.net" target="_blank" rel="noopener noreferrer" class="cmp-link">
-                            Visit PromptSentry <svg class="cmp-link-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
-                        </a>
-                    </div>
-                    <div class="cmp-product-card">
-                        <div class="cmp-product-tag secondary-tag">Consulting</div>
-                        <h3>AI Infrastructure &amp; Security Engineering</h3>
-                        <p>LLM deployment consulting, AI pipeline architecture, cloud migration, and security engineering for clients building on or integrating modern AI into existing systems.</p>
-                        <a href="services.html" class="cmp-link">
-                            View Consulting Services <svg class="cmp-link-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cmp-founder" aria-labelledby="cmp-founder-heading">
-            <div class="cmp-container">
-                <div class="cmp-founder-grid fnc-reveal">
-                    <div class="cmp-founder-image">
-                        <img src="image/Rectangle 126.png" alt="Vasiliy Ivanov, Founder of Five Nines Consulting" onerror="this.src='image/general_image/raw.png'">
-                    </div>
-                    <div class="cmp-founder-text">
-                        <span class="cmp-founder-tag">The Founder</span>
-                        <h2 id="cmp-founder-heading">Vasiliy Ivanov</h2>
-                        <p><strong>Builder, soldier, systems architect.</strong> After years in the Airborne and Special Operations community, Vasiliy moved into technical infrastructure and founded Five Nines Consulting to apply that same operational discipline to building AI infrastructure.</p>
-                        <p>Today he leads engineering on <strong>PromptSentry</strong>, FNC's flagship AI security product, and is designing the veteran training framework that will support FNC's growth over the long term.</p>
-                        <a href="the-founder.html" class="cmp-btn outline-btn cmp-founder-bio-btn">Read Full Bio</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cmp-cta" aria-labelledby="cmp-cta-heading">
-            <div class="cmp-container cmp-cta-inner fnc-reveal">
-                <div class="cmp-cta-text">
-                    <h2 id="cmp-cta-heading">Let's talk about what you're building.</h2>
-                    <p>Whether you're evaluating PromptSentry for an existing AI deployment, scoping a consulting engagement, or exploring a partnership, the fastest way to find out if FNC is the right fit is a short conversation.</p>
-                </div>
-                <div class="cmp-cta-action">
-                    <a href="contact.html" class="cmp-btn solid-btn">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="fnc-footer-clean">
-        <div class="fnc-footer-inner">
-            <div class="fnc-footer-brand">
-                <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting" class="fnc-footer-logo">
-                <p class="fnc-footer-tagline">Building technology products with discipline and craft.</p>
-                <a href="https://promptsentry.net" target="_blank" rel="noopener noreferrer" class="fnc-footer-product-card">
-                    <span class="fnc-footer-product-label">Our Product</span>
-                    <span class="fnc-footer-product-name">PromptSentry, AI Security Guardrail <span class="arrow" aria-hidden="true">→</span></span>
-                </a>
-            </div>
-            <div class="fnc-footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="company.html">About FNC</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="work-with-us.html">Work With Us</a></li>
-                    <li><a href="https://medium.com/@FNCLLC" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                </ul>
-            </div>
-            <div class="fnc-footer-col">
-                <h4>Get in touch</h4>
-                <ul>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li>Roanoke, VA, United States</li>
-                </ul>
+            <div class="overview-images appear-effect">
+                <img src="image/Frame 26088347.png" alt="FNC Team working">
             </div>
         </div>
-        <div class="fnc-footer-bottom">
-            <p>© 2026 Five Nines Consulting LLC</p>
+
+        <div class="identity-block appear-effect full-width-identity">
+            <h3>Core Identity</h3>
+            <ul class="identity-list">
+                <li><strong>Veteran-Centric:</strong> FNC is more than a consultancy; it is a training ground that
+                    builds people, careers, and communities.</li>
+                <li><strong>Execution Model:</strong> The company leverages the discipline and precision of veterans
+                    to deliver end-to-end technical solutions.</li>
+                <li><strong>The "Five Nines" Standard:</strong> The name reflects the industry standard for high
+                    availability (99.999% uptime), signaling a commitment to reliability and professional excellence
+                    in every project.</li>
+            </ul>
         </div>
+    </section>
+
+    <section class="mission-section animate animate-slide-up">
+
+        <div class="mission-text">
+
+            <h2 class="appear-effect">Our <span style="color:#626262;">Mission</span></h2>
+            <div class="grid-2x2 puppy-park hidden-grid">
+                <div class="grid-item kitty-box"><img
+                        src="image/a-professional-portrait-photograph-of-a-_qr88giJzQXGAsHMqmsOELQ_n5QGwPd7TIK8CAHIHHlP0w.jpeg">
+                </div>
+
+                <div class="grid-item kitty-box"><img
+                        src="image/a-photograph-of-a-diverse-group-of-men-r_zZDw6gmLQVGDRAeZIB5lqA_TXieM6hIRBOA25mM2k5EUw (1).jpeg">
+                </div>
+                <div class="grid-item animate animate-slide-up widen"><img
+                        src="image/a-photograph-of-a-modern-data-center-wit__p9yt5yCQaGExtvb2VLpEQ_oownxPECTAGiS2GqOIIOvw.jpeg">
+                </div>
+            </div>
+            <p class="appear-effect">To empower veterans through elite technical training and mentorship, providing a
+                platform where those who served deliver the high-stakes digital infrastructure and security solutions
+                our world demands.</p>
+        </div>
+        <div class="mission-images animate animate-slide-up">
+            <div class="smaller">
+                <img src="image/a-professional-portrait-photograph-of-a-_qr88giJzQXGAsHMqmsOELQ_n5QGwPd7TIK8CAHIHHlP0w.jpeg"
+                    class="appear-effect">
+                <img src="image/Generated Image April 04, 2025 - 12_51PM.jpeg" class="animate animate-slide-up">
+            </div>
+            <div class="larger">
+                <img src="image/custom-it.png" class="animate animate-slide-up">
+                <img
+                    src="image/a-photograph-of-a-modern-data-center-wit__p9yt5yCQaGExtvb2VLpEQ_oownxPECTAGiS2GqOIIOvw.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <section id="our-story" class="our-story-section animate animate-slide-up">
+        <div class="story-container">
+            <h2 class="appear-effect">Our <span style="color: #626262;">Story</span></h2>
+
+            <div class="story-hook">
+                <p class="appear-effect">We train veterans to be the next generation of tech leaders. Our team consists
+                    of motivated veterans who have been mentored to provide end-to-end technical solutions for
+                    businesses and individuals. From initial concept to final implementation, we deliver expert results
+                    driven by a veteran-led workforce committed to your success.</p>
+            </div>
+
+            <div class="story-deep-dive">
+                <div class="story-block appear-effect">
+                    <h3>Beyond Infrastructure: We Build People</h3>
+                    <p>At Five Nines Consulting (FNC), we believe that the discipline, resilience, and problem-solving
+                        skills forged in military service are the perfect foundation for the technical world. While our
+                        site mentions complex systems like decentralized authentication and modular data centers, our
+                        true "product" is the veterans who build them.</p>
+                </div>
+
+                <div class="story-block appear-effect">
+                    <h3>A Mission-Driven Approach to Technology</h3>
+                    <p>We aren't just a standard technology firm; we are a training ground. We have shifted our focus
+                        from simply delivering services to creating a self-sustaining ecosystem where veterans learn by
+                        doing. When you work with FNC, you aren't just hiring a consultant—you are providing a platform
+                        for a veteran to apply their specialized training to real-world challenges.</p>
+                </div>
+
+                <div class="story-block appear-effect">
+                    <h3>Our Veteran-Led Workforce</h3>
+                    <p>The activities we perform—ranging from cloud architecture to cybersecurity—are carried out by
+                        veterans who are transitioning into high-impact tech careers. Under the mentorship of industry
+                        experts, our team members grow into roles such as:</p>
+                    <ul>
+                        <li><strong>Cybersecurity Engineers</strong> securing digital assets.</li>
+                        <li><strong>Cloud Architects</strong> designing scalable infrastructure.</li>
+                        <li><strong>Technical Project Managers</strong> ensuring precision and reliability in every
+                            rollout.</li>
+                    </ul>
+                </div>
+
+                <div class="story-block appear-effect">
+                    <h3>Why It Matters</h3>
+                    <p>We are united by a belief in ownership and real-world outcomes. We don’t just build code; we
+                        build careers and communities. By choosing FNC, you are supporting a mission that empowers those
+                        who served to lead again—this time in the digital landscape. Our veterans bring a level of
+                        dedication and "combat-proven" reliability to your project that you won't find anywhere else.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="core-section animate animate-slide-up">
+        <h2 class="heas">Our<span style="color: #626262;"> Core Values</span></h2>
+        <div class="core-cards puppy-park">
+            <div class="core-card  animate animate-slide-up" style="background-color: #c4c4c444;">
+                <img src="icons/dartboard.png">
+                <div class="core-text">
+                    <h2>Precision</h2>
+                    <p> Every system is engineered for uptime, integrity, and transparency. </p>
+                </div>
+            </div>
+            <div class="core-card  animate animate-slide-up" style="background-color: #c4c4c444;">
+                <img src="icons/planet-earth.png">
+                <div class="core-text">
+                    <h2>Sustainability</h2>
+                    <p> From geothermal-powered compute to hydroponic food systems—we minimize waste and maximize reuse.
+                    </p>
+                </div>
+            </div>
+            <div class="core-card animate animate-slide-up" style="background-color: #c4c4c444;">
+                <img src="icons/target_18366255.png">
+                <div class="core-text">
+                    <h2>Purpose</h2>
+                    <p>No project is just a deliverable—it’s part of a broader goal to support communities, and unlock
+                        potential. </p>
+                </div>
+            </div>
+
+
+            <div class="core-card animate animate-slide-up" style="background-color: #c4c4c444;">
+                <img src="icons/security_2058432.png">
+                <div class="core-text">
+                    <h2>Security</h2>
+                    <p> From firewall deployments and MFA to zero-trust, security is embedded by design.
+                        Our Veterans are trained to protect your digital assets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="case-studies">
+
+
+        <div class="case-grid puppy-park">
+            <div class="section-header animate animate-slide-up">
+                <h2 class="appear-effect">What <span style="color: #626262;">We Do</span></h2>
+                <p class="appear-effect">FNC provides specialized services across several technical
+                    domains, all performed by veterans in training under expert mentorship
+                </p>
+                <a href="services.html" class="ca-button appear-effect">See All Services</a>
+            </div>
+            <div class="case-item appear-effect">
+                <img src="image/custom-website.png">
+
+                <div class="case-info appear-effect">
+
+                    <h2>Cloud & Infrastructure</h2>
+                    <p>Designing and maintaining scalable cloud environments and modular data centers</p>
+                </div>
+            </div>
+
+            <div class="case-item appear-effect">
+                <img src="image/remote-support.png" alt="3D Scanner App">
+                <div class="case-info appear-effect">
+
+                    <h2>Cybersecurity</h2>
+                    <p>Implementing defensive strategies to secure digital assets and prevent attacks</p>
+                </div>
+            </div>
+
+
+            <a href="services.html" class="ca-button hide appear-effect">See All Services</a>
+
+        </div>
+    </section>
+
+    <section class="tehrus">
+
+        <div class="tehrus-image animate animate-slide-up">
+
+            <img src="image/Rectangle 126.png">
+        </div>
+        <div class="tehrus-text">
+            <h2 class="animate animate-slide-up">The <span style="color: #626262;">Founder</span> </h2>
+            <p class="animate animate-slide-up">Vasiliy Ivanov is a builder, a soldier, and a systems architect who
+                never accepted failure as an option. After years in the Airborne and Special Operations, he transitioned
+                into technical infrastructure, now he plans to train infantrymen to replace routers
+                and design high-availability networks for mission-critical environments.</p>
+            <p class="appear-effect">He learned the hard way what breaks systems—from brittle proxy-based authentication
+                to centralized cloud failures. </p>
+            <a href="the-founder.html" class="ca-button  appear-effect">Read More</a>
+            <a href="the-founder.html" class="ca-button hide  appear-effect" style="margin-top: 20px;">Read More</a>
+
+        </div>
+
+    </section>
+   <!-- <section class="vision">
+        <div class="vision-text animate animate-slide-up">
+            <h2 class="juix">Impact <span style="color: #626262;">In Progress</span> </h2>
+
+        </div>
+
+            <div class="vision-card animate animate-slide-up">
+                <img
+                    src="image/a-girl-holding-a-phone-and-ponting-the-p_4n4DUthJSKaDESYmEtPluA_205rknPZR82UhUby60g40g.jpeg">
+                <div class="vision-text">
+                    <h2 class="appear-effect">Blockchain MFA</h2>
+                    <p class="appear-effect"> A decentralized identity and authentication platform powered by Cardano
+                        and WMTX.
+                    </p>
+                    <a
+                        href="https://medium.com/@FNCLLC/mfa-nft-marketplace-a-new-era-of-decentralized-authentication-9442003a22d6">Learn
+                        More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#7d2b89" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.9" d="M4.5 12h15m0 0l-5.625-6m5.625 6l-5.625 6" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="vision-card animate animate-slide-up">
+                <img
+                    src="image/a-photograph-of-a-modern-data-center-wit__p9yt5yCQaGExtvb2VLpEQ_oownxPECTAGiS2GqOIIOvw.jpeg">
+                <div class="vision-text">
+                    <h2 class="appear-effect">Modular Data Infrastructure</h2>
+                    <p class="appear-effect">From EMP-resistant data centers to edge deployments in remote zones, we
+                        will design infrastructure.. </p>
+                    <a href="https://medium.com/@FNCLLC">Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#7d2b89" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.9" d="M4.5 12h15m0 0l-5.625-6m5.625 6l-5.625 6" />
+                        </svg></a>
+
+                </div>
+            </div>
+            <div class="vision-card animate animate-slide-up">
+                <img
+                    src="image/a-professional-portrait-photograph-of-a-_qr88giJzQXGAsHMqmsOELQ_n5QGwPd7TIK8CAHIHHlP0w.jpeg">
+                <div class="vision-text">
+                    <h2 class="appear-effect">Veteran Training & Community Building</h2>
+                    <p class="appear-effect">Through a scalable community blueprint, we will train elite veterans in
+                        cybersecurity, IT,
+                        agriculture, and trades. </p>
+                    <a
+                        href="https://medium.com/@FNCLLC/a-veteran-led-self-sustaining-future-the-fnc-vision-d7322393c67a">Learn
+                        More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#7d2b89" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.9" d="M4.5 12h15m0 0l-5.625-6m5.625 6l-5.625 6" />
+                        </svg> </a>
+
+                </div>
+            </div>-->
+            <!--  <div class="vision-card animate animate-slide-up">
+                <img src="image/Generated Image April 04, 2025 - 12_51PM.jpeg">
+                <div class="vision-text">
+                    <h2 class="appear-effect">Sustainable Engineering</h2>
+                    <p class="appear-effect">Geothermal cooling systems, aquaponics, solar-powered housing, and locally
+                        milled lumber all support our self-sustaining communities. </p>
+                    <a href="https://medium.com/@FNCLLC">Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#7d2b89" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.9" d="M4.5 12h15m0 0l-5.625-6m5.625 6l-5.625 6" />
+                        </svg></a>
+
+                </div>
+            </div>
+    </section>-->
+    <section class="vision">
+    <div class="vision-header animate animate-slide-up">
+        <h2 class="juix">Impact <span style="color: #626262;">In Progress</span></h2>
+    </div>
+
+    <div class="vision-card featured-card animate animate-slide-up">
+        <img src="image/a-professional-portrait-photograph-of-a-_qr88giJzQXGAsHMqmsOELQ_n5QGwPd7TIK8CAHIHHlP0w.jpeg" alt="Veteran Training">
+        
+        <div class="vision-text">
+            <h2 class="appear-effect">Veteran Training & Community Building</h2>
+            <p class="appear-effect">Through a scalable community blueprint, we will train elite veterans in cybersecurity, IT, agriculture, and trades.</p>
+            <a href="https://medium.com/@FNCLLC/a-veteran-led-self-sustaining-future-the-fnc-vision-d7322393c67a">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#7d2b89" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.9" d="M4.5 12h15m0 0l-5.625-6m5.625 6l-5.625 6" />
+                </svg> 
+            </a>
+        </div>
+    </div>
+</section>
+    <section class="work-out">
+
+        <div class="work-out-text animate animate-slide-up">
+            <h2>Work <span style="color: #626262;">With Us</span></h2>
+            <p> Whether you’re a government agency, enterprise client, or fellow builder, we’re always looking for
+                partners who share our values and want to work with those who never quit. </p>
+            <p>Contact: <a href="#"> info@fiveninesconsulting.io</a> </p>
+        </div>
+        <div class="work-out-image appear-effect">
+            <img src="image/on-site.png">
+        </div>
+    </section>
+
+
+  <!--  <div class="cntact-section contacts puppy-park">
+        <h1 class="appear-effect kitty-box lastly" style="font-size: 38px;">Get <span style="color: #626262;"> in
+                touch</span></h1>
+                            <a href="the-founder.html" class="ca-button  appear-effect">Read More</a>
+
+        <p class="sub-text kitty-box appear-effect">You can contact us by email</p>
+        <a href="mailto:tehrus@gmail.com" class="email-link kitty-box appear-effect">
+            info@fiveninesconsulting.io
+        </a>
+    </div>
+
+    <div class="form-container appear-effect">
+        <form>
+            <label for="name" class="labell">Name</label>
+            <input type="text" id="name" placeholder="Mark John">
+
+            <label for="email" class="labell">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+
+            <label for="message" class="labell">How can we help you?</label>
+            <textarea style="height: 283px;" id="message"
+                placeholder="Let us know your challenges or vision. We're ready to help."></textarea>
+
+            <label for="budget" class="labell">What is your budget?</label>
+            <input type="text" id="budget" placeholder="1000 USD">
+            <a href="mailto:vasiliy.s.ivanov@fiveninesconsulting.io" class="labelll"
+                style="width: 141px ; color: white; ">Submit</a>
+
+        </form>
+    </div>-->
+
+
+    <section class="get-in-touch animate animate-slide-up">
+    <div class="contact-content">
+        <h2>Ready to Make an Impact?</h2>
+        <p>Interested in partnering with us, supporting our mission, or learning more about our veteran training programs? We would love to hear from you.</p>
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="contact-btn">
+            Get in Touch
+        </a>
+    </div>
+</section>
+
+
+
+
+    <footer class="footer">
+        <div class="contact-us">
+            <h3>CONTACT US</h3>
+            <hr>
+        </div>
+        <div class="container">
+
+
+            <div class="footer-container">
+                <div class="footer-column">
+
+                    <img src="image/general_image/five nine.png" alt="Five Nines Consulting" class="footer-logo">
+
+                    <div class="social-links">
+                        <!-- <a href="https://x.com/fncnodeos" target="_blank"> X</a><br> -->
+                        <a href="https://www.linkedin.com/in/vasiliy-s-ivanov/" target="_blank"> LinkedIn</a><br>
+                        <a href="https://www.facebook.com/share/1FNtTRnNj4/" target="_blank"> Facebook</a><br>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-column">
+                    <h3> Quick links</h3>
+                    <div class="quick-links">
+                        <a href="https://fiveninesconsulting.io">Home</a><br>
+                        <a href="services.html">Services</a><br>
+                        <a href="company.html">Company</a><br>
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor">Contact
+                            Us</a><br>
+                        <a href="https://medium.com/@FNCLLC">Blog</a><br>
+
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Location</h3>
+                    <div class="lokation">
+
+                        <p class="mails">Roanoke, VA</p>
+                    </div>
+                    <div class="footer-column news">
+                       <!-- <h3>Get in touch</h3>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor" class="mails">Get in touch</a>
+                    --><h3 style=" margin-top: 15px;">Phone</h3>
+                        <p class="mails">703-309-6460</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr>
+            <p>© 2025 FNC</p>
+        </div>
+
     </footer>
-
-    <style>
-        body { font-family: 'Work Sans', sans-serif; background: #ffffff; margin: 0; color: #333; }
-        main { display: block; }
-        .cmp-container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-
-        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #111; margin-top: 0; }
-        p { line-height: 1.65; color: #555; }
-
-        .navbar-logo { height: 48px; width: auto; }
-
-        .cmp-btn { display: inline-block; text-align: center; padding: 14px 28px; font-weight: 600; border-radius: 4px; text-decoration: none; transition: all 0.2s ease; font-size: 15px; }
-        .solid-btn { background: #FF6B35; color: white; border: 2px solid #FF6B35; }
-        .solid-btn:hover { background: #e85a26; border-color: #e85a26; }
-        .outline-btn { background: transparent; color: #111; border: 2px solid #111; }
-        .outline-btn:hover { background: #111; color: white; }
-        .cmp-founder-bio-btn { margin-top: 16px; }
-
-        .cmp-inline-link {
-            color: #FF6B35;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.2s;
-        }
-        .cmp-inline-link:hover { color: #e85a26; text-decoration: underline; }
-
-        /* =========================================
-           HERO - FULL WIDTH BG, ARCHITECTURAL BLEND
-           ========================================= */
-        .cmp-hero {
-            padding: 72px 0 64px;
-            text-align: left;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cmp-hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
-        }
-        .cmp-hero-bg svg {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-        .cmp-hero-bg::after {
-            content: '';
-            position: absolute;
-            top: 8%;
-            right: 8%;
-            width: 420px;
-            height: 420px;
-            background: radial-gradient(circle, rgba(255,107,53,0.10), transparent 65%);
-            pointer-events: none;
-        }
-
-        .cmp-hero-wrap { position: relative; z-index: 2; }
-        .cmp-hero-content {
-            max-width: 700px;
-            position: relative;
-        }
-        .cmp-hero h1 {
-            font-size: clamp(48px, 6.5vw, 72px);
-            font-weight: 800;
-            line-height: 1.05;
-            margin-bottom: 24px;
-            letter-spacing: -0.04em;
-        }
-        .cmp-h1-accent { color: #FF6B35; }
-        .cmp-hero-sub {
-            font-size: 18px;
-            color: #555;
-            margin: 0;
-            line-height: 1.65;
-        }
-
-        /* =========================================
-           IDENTITY CARDS - ABUTTING GRID
-           ========================================= */
-        .cmp-identity { padding: 0; background: transparent; }
-        .cmp-grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1px;
-            background: #e5e7eb;
-            border: 1px solid #e5e7eb;
-            margin-top: -1px;
-            position: relative;
-            z-index: 2;
-        }
-        .cmp-card {
-            background: #ffffff;
-            padding: 48px 40px;
-            transition: background 0.2s ease;
-        }
-        .cmp-card:hover {
-            background: #fafafa;
-        }
-        .cmp-icon {
-            font-size: 24px;
-            color: #FF6B35;
-            margin-bottom: 20px;
-            display: block;
-        }
-        .cmp-card h3 { font-size: 18px; margin-bottom: 12px; letter-spacing: -0.01em; }
-        .cmp-card p { font-size: 14.5px; margin: 0; line-height: 1.6; }
-
-        /* =========================================
-           STORY SECTION
-           ========================================= */
-        .cmp-story { padding: 96px 0; background: #fafafa; border-bottom: 1px solid #e5e7eb; }
-        .cmp-story-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.3fr;
-            gap: 80px;
-            align-items: start;
-        }
-        .cmp-story-left { position: sticky; top: 100px; }
-        .cmp-story-left h2 {
-            font-size: clamp(32px, 4vw, 44px);
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            margin-bottom: 32px;
-        }
-        .cmp-story-image-wrap { position: relative; }
-        .cmp-story-image-wrap img {
-            width: 100%;
-            border-radius: 0;
-            display: block;
-            border: 1px solid #e5e7eb;
-        }
-
-        .lead-text {
-            font-size: 20px;
-            color: #111;
-            font-weight: 600;
-            margin-bottom: 24px;
-            line-height: 1.5;
-            letter-spacing: -0.01em;
-        }
-        .cmp-story-text > p:not(.lead-text) { font-size: 16px; margin-bottom: 16px; }
-
-        /* =========================================
-           SECTION HEADERS
-           ========================================= */
-        .cmp-section-header {
-            margin-bottom: 48px;
-            max-width: 680px;
-        }
-        .cmp-section-header h2 {
-            font-size: clamp(28px, 3.2vw, 38px);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 16px;
-        }
-        .cmp-section-header p { font-size: 16px; margin: 0; }
-
-        /* =========================================
-           CORE VALUES - 2x2 ARCHITECTURAL GRID
-           ========================================= */
-        .cmp-values {
-            padding: 96px 0;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .cmp-grid-2x2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1px;
-            background: #e5e7eb;
-            border: 1px solid #e5e7eb;
-        }
-        .cmp-value-card {
-            background: #ffffff;
-            padding: 48px 40px;
-            transition: background 0.2s ease;
-        }
-        .cmp-value-card:hover {
-            background: #fafafa;
-        }
-        .cmp-value-header {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 16px;
-        }
-        .cmp-value-header .cmp-icon {
-            margin-bottom: 0;
-            font-size: 20px;
-            color: #111;
-        }
-        .cmp-value-header h3 {
-            color: #111;
-            margin: 0;
-            font-size: 20px;
-            letter-spacing: -0.01em;
-            font-weight: 700;
-        }
-        .cmp-value-card p {
-            color: #555;
-            margin: 0;
-            font-size: 15px;
-            line-height: 1.65;
-        }
-
-        /* =========================================
-           WHAT WE DO
-           ========================================= */
-        .cmp-what-we-do { padding: 96px 0; background: #fafafa; border-bottom: 1px solid #e5e7eb; }
-        .cmp-grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 32px;
-        }
-        .cmp-product-card {
-            background: white;
-            padding: 48px 40px;
-            border: 1px solid #e5e7eb;
-            transition: border-color 0.2s ease;
-        }
-        .cmp-product-card:hover {
-            border-color: #111;
-        }
-        .cmp-product-tag {
-            display: inline-block;
-            padding: 4px 10px;
-            font-size: 10px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            margin-bottom: 20px;
-            border: 1px solid currentColor;
-        }
-        .primary-tag { color: #FF6B35; }
-        .secondary-tag { color: #888; }
-
-        .cmp-product-card h3 {
-            font-size: 24px;
-            margin-bottom: 16px;
-            letter-spacing: -0.01em;
-        }
-        .cmp-product-card p {
-            font-size: 15px;
-            margin-bottom: 0;
-            color: #555;
-        }
-        .cmp-link {
-            color: #111;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 24px;
-            transition: color 0.2s;
-        }
-        .cmp-link:hover { color: #FF6B35; }
-        .cmp-link-icon { width: 14px; height: 14px; }
-
-        /* =========================================
-           FOUNDER
-           ========================================= */
-        .cmp-founder {
-            padding: 96px 0;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .cmp-founder-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.8fr;
-            gap: 64px;
-            align-items: center;
-            padding: 56px;
-            border: 1px solid #e5e7eb;
-            background: #fafafa;
-        }
-        .cmp-founder-image img {
-            width: 100%;
-            max-width: 320px;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            border: 1px solid #e5e7eb;
-            display: block;
-        }
-        .cmp-founder-tag {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 800;
-            color: #111;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            margin-bottom: 16px;
-            border-bottom: 2px solid #FF6B35;
-            padding-bottom: 4px;
-        }
-        .cmp-founder-text h2 {
-            font-size: clamp(32px, 3.5vw, 40px);
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-        }
-        .cmp-founder-text p { font-size: 16px; margin-bottom: 16px; }
-
-        /* =========================================
-           CTA - COMMAND BLOCK
-           ========================================= */
-        .cmp-cta {
-            padding: 96px 24px;
-            background: #111;
-            color: white;
-            border-bottom: 1px solid #000;
-        }
-        .cmp-cta-inner {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            align-items: center;
-            gap: 48px;
-        }
-        .cmp-cta h2 {
-            color: white;
-            font-size: clamp(32px, 3.5vw, 44px);
-            margin-bottom: 16px;
-            letter-spacing: -0.02em;
-        }
-        .cmp-cta p {
-            color: #9ca3af;
-            max-width: 600px;
-            margin: 0;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        .cmp-cta-action .cmp-btn {
-            padding: 16px 32px;
-        }
-
-        /* Footer */
-        .fnc-footer-clean { background: #0a0a0a; padding: 56px 24px 24px; border-top: 1px solid #2a2a2a; color: #d1d5db; margin: 0; }
-        .fnc-footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 64px; padding-bottom: 40px; border-bottom: 1px solid #2a2a2a; }
-        .fnc-footer-brand { display: flex; flex-direction: column; gap: 18px; }
-       .fnc-footer-logo {
-            height: 56px;
-            width: auto;
-            max-width: 200px;
-            display: block;
-            background: #f3f4f6;
-            padding: 8px 12px;
-            border-radius: 8px;
-            align-self: flex-start;
-        }
-        .fnc-footer-tagline { font-size: 13.5px; color: #9ca3af; margin: 0; }
-        .fnc-footer-product-card { display: inline-flex; flex-direction: column; padding: 12px 16px; background: rgba(255, 107, 53, 0.08); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 8px; text-decoration: none; width: fit-content; transition: all 0.2s; }
-        .fnc-footer-product-card:hover { background: rgba(255, 107, 53, 0.12); transform: translateY(-1px); }
-        .fnc-footer-product-label { font-size: 10px; color: #FF6B35; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
-        .fnc-footer-product-name { color: #f3f4f6; font-size: 14px; font-weight: 500; }
-        .fnc-footer-col h4 { font-size: 12px; text-transform: uppercase; color: #f3f4f6; margin-bottom: 18px; letter-spacing: 0.08em; }
-        .fnc-footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-        .fnc-footer-col a, .fnc-footer-col li { color: #9ca3af; text-decoration: none; font-size: 14px; transition: color 0.2s; }
-        .fnc-footer-col a:hover { color: white; }
-        .fnc-footer-bottom { text-align: center; margin-top: 24px; font-size: 12px; color: #6b7280; }
-
-        @media (max-width: 860px) {
-            .cmp-hero { padding: 48px 0 48px; }
-            .cmp-hero-bg { display: none; }
-            .cmp-hero-content { max-width: 100%; }
-            .cmp-grid-3 { grid-template-columns: 1fr; margin-top: 0; }
-            .cmp-card { padding: 32px 24px; border-bottom: 1px solid #e5e7eb; }
-            .cmp-story { padding: 64px 0; }
-            .cmp-story-grid { grid-template-columns: 1fr; gap: 48px; }
-            .cmp-story-left { position: static; }
-            .cmp-grid-2x2 { grid-template-columns: 1fr; }
-            .cmp-value-card { padding: 32px 24px; }
-            .cmp-grid-2 { grid-template-columns: 1fr; }
-            .cmp-product-card { padding: 32px 24px; }
-            .cmp-founder { padding: 64px 0; }
-            .cmp-founder-grid { grid-template-columns: 1fr; padding: 32px 24px; gap: 32px; }
-            .cmp-founder-image img { max-width: 100%; margin: 0 auto; }
-            .cmp-founder-tag, .cmp-founder-text h2 { margin-left: auto; margin-right: auto; }
-            .cmp-cta { padding: 64px 24px; }
-            .cmp-cta-inner { grid-template-columns: 1fr; text-align: left; gap: 32px; }
-            .fnc-footer-inner { grid-template-columns: 1fr; gap: 36px; }
-        }
-    </style>
-
     <script>
-        (function () {
-            const btn = document.querySelector('.menu-button');
-            const links = document.querySelector('.nav-links');
-            if (!btn || !links) return;
 
-            window.toggleMenu = function () {
-                const isOpen = links.classList.toggle('open');
-                btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            };
-        })();
     </script>
 
-    <script src="script-motion.js"></script>
-    <script src="script.js"></script>
+
+    <script src="script.js">
+
+
+    </script>
 </body>
 
 </html>

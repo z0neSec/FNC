@@ -4,440 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNC | The Founder, Vasiliy S. Ivanov</title>
+    <title>FNC | The Founder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="icon" type="image/svg+xml" href="image/general_image/fnc-logo.svg">
-    <link rel="apple-touch-icon" href="image/general_image/fnc-logo.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/general_image/raw.png">
+    <link rel="apple-touch-icon" href="image/general_image/raw.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/general_styles/nav_styles.css?v=2">
-    <link rel="stylesheet" href="styles/general_styles/motion.css">
+    <link rel="stylesheet" href="styles/general_styles/nav_styles.css">
+    <link rel="stylesheet" href="styles/index_styles/styles.css">
+    <link rel="stylesheet" href="styles/general_styles/footer.css">
+    <link rel="stylesheet" href="styles/company_styles/styles.css">
+
+    <link rel="stylesheet" href="styles/founder_styles/styles.css">
 </head>
 
 <body>
 
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-        <defs>
-            <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-            </symbol>
-        </defs>
-    </svg>
-
     <nav class="navbar">
-        <div class="navbar-brand">
-            <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting logo" class="navbar-logo">
+        <div class="navbar-brand animate animate-slide-left">
+            <img src="image/general_image/newlogo.png" alt="Five Nines Consulting Logo">
         </div>
-        <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="company.html" class="active" aria-current="page">Company</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="work-with-us.html">Work With Us</a></li>
-            <li><a href="contact.html" class="cont">Contact Us</a></li>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links appear-effect">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="company.html" class="active">Company</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="fnc-veteran-services.html" class="active kitty-bx">Work With Us</a></li>
+
+            <!-- <li><a href="blockchain-MFA.html" class="active">Blockchain MFA</a></li> -->
+
+            <!-- <li><a href="https://medium.com/@FNCLLC" class="active kitty-bx">Blog</a></li> -->
+
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor"
+                    class="active cont appear-effect">Contact Us</a></li>
         </ul>
+
     </nav>
+    <section class="new-founder">
+        <div class="founder-intro animate animate-slide-up">
+            <h1 class="appear-effect gsap">The Founder: <span style="color: #626262;">Vasiliy S. Ivanov</span></h1>
 
-    <main>
-
-        <section class="fnd-hero" aria-labelledby="fnd-hero-heading">
-            <div class="fnd-container">
-                <a href="company.html" class="fnd-back-link">&larr; Back to Company</a>
-
-                <div class="fnd-hero-grid fnc-reveal">
-                    <div class="fnd-hero-portrait">
-                        <img src="image/about_image/Rectangle 123.png" alt="Vasiliy Ivanov, Founder of Five Nines Consulting" onerror="this.src='image/Rectangle 126.png'">
-                    </div>
-                    <div class="fnd-hero-text">
-                        <span class="fnd-eyebrow">Founder</span>
-                        <h1 id="fnd-hero-heading">Vasiliy Ivanov</h1>
-                        <p class="fnd-hero-role">Founder &amp; engineering lead, Five Nines Consulting. Building PromptSentry.</p>
-                        <p class="fnd-hero-sub">A veteran of the Airborne and Special Operations community now building technology products from Roanoke, Virginia.</p>
-                    </div>
-                </div>
+            <img src="image/about_image/Rectangle 123.png" id="intro-img">
+        </div>
+        <div class="founder-gallery puppy-park">
+            <h1 class="appear-effect disap">The Founder: <span style="color: #626262;">Vasiliy S. Ivanov</span></h1>
+            <div class="gallery-images animate animate-slide-left">
+                <img src="image/Rectangle 126.png" class="gallery-item">
+                <img src="image/tehrus2.png" class="gallery-item">
+                <img src="image/tehrus.png" class="gallery-item">
             </div>
-        </section>
+            <!-- Arrow SVG (to be added later) -->
 
-        <section class="fnd-story" aria-labelledby="fnd-story-heading">
-            <div class="fnd-container fnd-narrow">
-                <h2 id="fnd-story-heading" class="fnd-h2">From operations to engineering.</h2>
+        </div>
+    </section>
 
-                <p class="fnd-prose">Vasiliy spent years in the Airborne and Special Operations community before moving into technical infrastructure. The transition wasn't a pivot. It was the same discipline applied to a different domain: clarity under pressure, planning for failure, executing without shortcuts, the skills that mattered in operations are the skills that build resilient engineering systems.</p>
 
-                <p class="fnd-prose">He founded Five Nines Consulting in 2024 to bring that operational discipline to building technology products. The company is small on purpose, focused on shipping things that work and taking on engagements where careful engineering changes the outcome.</p>
+    <section class="para">
+        <p><strong>V</strong><span>asiliy Ivanov</span> is a builder, a soldier, and a systems architect who never
+            accepted failure as an option. After years in the Airborne and Special Operations, he transitioned into
+            technical infrastructure, now he plans to train infantrymen to replace routers and designed
+            high-availability
+            networks for mission-critical environments.
 
-                <blockquote class="fnd-pullquote" aria-label="Operational Doctrine">
-                    <p>"The standards that kept us alive in the field translate directly to the engineering room. Plan for failure. Move with intention. Don't make promises you can't keep. That's what builds systems people can rely on, and companies that last."</p>
-                </blockquote>
+            He learned the hard way what breaks systems—from brittle proxy-based authentication to centralized cloud
+            failures. He responded by building better: zero-trust authentication models powered by Cardano, modular data
+            centers fueled by renewables, and training regimens that prepare
+            veterans for careers in the real world, not just classrooms.
 
-                <h3 class="fnd-h3">What he's building today</h3>
+        </p>
+        <p>FNC began as a response to inefficiency, disillusionment, and dependency. Under Vasiliy’s leadership, it is
+            becoming a movement: one that replaces dashboards with discipline, replaces burnout with brotherhood, and
+            replaces excuses with engineered solutions. He continues to lead by example—offering his own time for free
+            to train, design, and deploy alongside veterans until they reach their first major milestone. His focus
+            remains on long-term freedom: through ownership,
+            through housing, and through world-class training. </p>
 
-                <p class="fnd-prose">Vasiliy leads engineering on <strong>PromptSentry</strong>, FNC's flagship product, while keeping FNC's wider engineering work in view, the consulting engagements in AI infrastructure, cloud, and security that the company takes on alongside the product. PromptSentry protects AI applications from prompt injection, jailbreaks, PII leaks, and explicit content, with benchmarked attack defense at 98.92% across 1,850 adversarial prompts. It's used by educational platforms protecting kids and by enterprises protecting their workforce. <a href="https://promptsentry.net" target="_blank" rel="noopener noreferrer" class="fnd-inline-link">Visit PromptSentry <svg class="fnd-link-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></p>
+    </section>
 
-                <p class="fnd-prose">Over the longer term, he is designing a <strong>veteran training framework</strong> to bring more disciplined operators into engineering careers, starting with veterans, through hands-on technical mentorship. The framework is in active design, not yet running cohorts. The goal is to launch it with the same standard FNC applies to everything else it ships. <a href="work-with-us.html" class="fnd-inline-link">Learn more <svg class="fnd-link-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></p>
-            </div>
-        </section>
+    <section class="read-mfa">
+        <div class="read-info">
+            <img src="image/a-girl-holding-a-phone-and-ponting-the-p_4n4DUthJSKaDESYmEtPluA_205rknPZR82UhUby60g40g.jpeg"
+                class="appear-effect">
+            <div class="read-info-text animate animate-slide-up">
+                <h3>Want To Know More About How This Started? </h3>
 
-        <section class="fnd-facts" aria-label="At a glance">
-            <div class="fnd-container">
-                <div class="fnd-facts-row">
-                    <div class="fnd-fact">
-                        <div class="fnd-fact-label">Based in</div>
-                        <div class="fnd-fact-value">Roanoke, Virginia</div>
-                    </div>
-                    <div class="fnd-fact">
-                        <div class="fnd-fact-label">Founded</div>
-                        <div class="fnd-fact-value">Five Nines Consulting, 2024</div>
-                    </div>
-                    <div class="fnd-fact">
-                        <div class="fnd-fact-label">Background</div>
-                        <div class="fnd-fact-value">Airborne &amp; Special Operations, veteran</div>
-                    </div>
-                    <div class="fnd-fact">
-                        <div class="fnd-fact-label">Current focus</div>
-                        <div class="fnd-fact-value">PromptSentry, AI security</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="fnd-cta" aria-labelledby="fnd-cta-heading">
-            <div class="fnd-container fnd-narrow fnd-cta-inner">
-                <h2 id="fnd-cta-heading" class="fnd-cta-h2">Want to talk with V directly?</h2>
-                <p class="fnd-cta-sub">For PromptSentry, consulting engagements, or the veteran training framework, the fastest way to reach him is through the contact form.</p>
-                <a href="contact.html" class="fnd-btn fnd-cta-btn">
-                    Get in Touch <svg class="fnd-btn-icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                <a
+                    href="https://medium.com/@FNCLLC/mfa-nft-marketplace-a-new-era-of-decentralized-authentication-9442003a22d6">
+                    <p> Read the full Blockchain MFA story
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50">
+                            <path fill="#602269" d="m38.288 10.297l1.414 1.415l-14.99 14.99l-1.414-1.414z"
+                                stroke-width="1.5" stroke="#602269" />
+                            <path fill="#602269"
+                                d="M40 20h-2v-8h-8v-2h10zm-5 18H15c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h11v2H15c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V24h2v11c0 1.7-1.3 3-3 3"
+                                stroke-width="1.5" stroke="#626262" />
+                        </svg>
+                    </p>
                 </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <footer class="footer">
+        <div class="contact-us">
+            <h3>CONTACT US</h3>
+            <hr>
+        </div>
+        <div class="container">
 
-    <footer class="fnc-footer-clean">
-        <div class="fnc-footer-inner">
-            <div class="fnc-footer-brand">
-                <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting" class="fnc-footer-logo">
-                <p class="fnc-footer-tagline">Building technology products with discipline and craft.</p>
-                <a href="https://promptsentry.net" target="_blank" rel="noopener noreferrer" class="fnc-footer-product-card">
-                    <span class="fnc-footer-product-label">Our Product</span>
-                    <span class="fnc-footer-product-name">PromptSentry, AI Security Guardrail <span class="arrow" aria-hidden="true">→</span></span>
-                </a>
-            </div>
-            <div class="fnc-footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="company.html">About FNC</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="work-with-us.html">Work With Us</a></li>
-                    <li><a href="https://medium.com/@FNCLLC" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                </ul>
-            </div>
-            <div class="fnc-footer-col">
-                <h4>Get in touch</h4>
-                <ul>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li>Roanoke, VA, United States</li>
-                </ul>
+
+            <div class="footer-container">
+                <div class="footer-column">
+
+                    <img src="image/general_image/five nine.png" alt="Five Nines Consulting" class="footer-logo">
+
+                    <div class="social-links">
+                        <!-- <a href="https://x.com/fncnodeos" target="_blank"> X</a><br> -->
+                        <a href="https://www.linkedin.com/in/vasiliy-s-ivanov/" target="_blank"> LinkedIn</a><br>
+                        <a href="https://www.facebook.com/share/1FNtTRnNj4/" target="_blank"> Facebook</a><br>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-column">
+                    <h3> Quick links</h3>
+                    <div class="quick-links">
+                        <a href="https://fiveninesconsulting.io">Home</a><br>
+                        <a href="services.html">Services</a><br>
+                        <a href="company.html">Company</a><br>
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor">Contact
+                            Us</a><br>
+                        <a href="https://medium.com/@FNCLLC">Blog</a><br>
+
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Location</h3>
+                    <div class="lokation">
+
+                        <p class="mails">Roanoke, VA</p>
+                    </div>
+                    <div class="footer-column news">
+                        <h3>Get in touch</h3>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor" class="mails">Get in touch</a>
+                        <h3 style=" margin-top: 15px;">Phone</h3>
+                        <p class="mails">703-309-6460</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-        <div class="fnc-footer-bottom">
-            <p>© 2026 Five Nines Consulting LLC</p>
+        <div class="footer-bottom">
+            <hr>
+            <p>© 2025 FNC</p>
         </div>
+
     </footer>
-
-    <style>
-        body { font-family: 'Work Sans', sans-serif; background: #ffffff; margin: 0; color: #333; }
-        main { display: block; }
-        .fnd-container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-        .fnd-narrow { max-width: 760px; }
-
-        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #111; margin-top: 0; }
-        p { line-height: 1.65; color: #555; }
-
-        .navbar-logo { height: 48px; width: auto; }
-
-        .fnd-back-link {
-            display: inline-block;
-            color: #6b7280;
-            font-size: 13px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-bottom: 32px;
-            transition: color 0.15s;
-        }
-        .fnd-back-link:hover { color: #FF6B35; }
-
-        .fnd-eyebrow {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 800;
-            color: #111;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            margin-bottom: 16px;
-            border-bottom: 2px solid #FF6B35;
-            padding-bottom: 4px;
-        }
-
-        .fnd-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 28px;
-            font-weight: 600;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            font-size: 15px;
-            background: #111;
-            color: white;
-            border: 2px solid #111;
-        }
-        .fnd-btn:hover { background: #FF6B35; border-color: #FF6B35; }
-        .fnd-btn-icon { width: 14px; height: 14px; }
-
-        .fnd-inline-link {
-            color: #111;
-            font-weight: 700;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            transition: color 0.2s;
-        }
-        .fnd-inline-link:hover { color: #FF6B35; }
-        .fnd-link-icon { width: 12px; height: 12px; }
-
-        /* =========================================
-           HERO, side-by-side portrait + intro
-           ========================================= */
-        .fnd-hero {
-            padding: 56px 0 72px;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .fnd-hero-grid {
-            display: grid;
-            grid-template-columns: 320px 1fr;
-            gap: 56px;
-            align-items: center;
-        }
-        .fnd-hero-portrait img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            display: block;
-            border: 1px solid #e5e7eb;
-            border-radius: 0;
-        }
-        .fnd-hero-text h1 {
-            font-size: clamp(40px, 5vw, 60px);
-            font-weight: 800;
-            line-height: 1.02;
-            letter-spacing: -0.03em;
-            margin: 0 0 14px;
-            color: #111;
-        }
-        .fnd-hero-role {
-            font-size: 17px;
-            color: #111;
-            font-weight: 600;
-            margin: 0 0 12px;
-            letter-spacing: -0.005em;
-        }
-        .fnd-hero-sub {
-            font-size: 16px;
-            color: #6b7280;
-            line-height: 1.6;
-            margin: 0;
-            max-width: 540px;
-        }
-
-        /* =========================================
-           STORY, long-form prose
-           ========================================= */
-        .fnd-story { padding: 88px 0 72px; background: #ffffff; }
-        .fnd-h2 {
-            font-size: clamp(28px, 3.2vw, 38px);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            line-height: 1.15;
-            margin: 0 0 32px;
-        }
-        .fnd-h3 {
-            font-size: 22px;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            margin: 48px 0 20px;
-            color: #111;
-        }
-        .fnd-prose {
-            font-size: 17px;
-            color: #374151;
-            line-height: 1.75;
-            margin: 0 0 22px;
-        }
-        .fnd-prose strong { color: #111; font-weight: 700; }
-
-        .fnd-pullquote {
-            margin: 64px 0;
-            padding: 40px 48px;
-            background: #ffffff;
-            border: 2px solid #111;
-            position: relative;
-        }
-        .fnd-pullquote::before {
-            content: 'OPERATIONAL DOCTRINE';
-            position: absolute;
-            top: -10px;
-            left: 32px;
-            background: #ffffff;
-            padding: 0 16px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-            color: #FF6B35;
-            text-transform: uppercase;
-        }
-        .fnd-pullquote p {
-            font-size: 22px;
-            line-height: 1.5;
-            color: #111;
-            font-weight: 700;
-            font-style: normal;
-            letter-spacing: -0.01em;
-            margin: 0;
-        }
-
-        /* =========================================
-           FACTS STRIP, honest at-a-glance
-           ========================================= */
-        .fnd-facts {
-            padding: 72px 0;
-            background: #ffffff;
-            border-top: 1px solid #e5e7eb;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .fnd-facts-row {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1px;
-            background: #e5e7eb;
-            border: 1px solid #e5e7eb;
-        }
-        .fnd-fact {
-            background: #ffffff;
-            padding: 32px 24px;
-            transition: background 0.2s ease;
-        }
-        .fnd-fact:hover {
-            background: #fafafa;
-        }
-        .fnd-fact-label {
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: #888;
-            margin-bottom: 8px;
-        }
-        .fnd-fact-value {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: #111;
-            line-height: 1.4;
-            letter-spacing: -0.005em;
-        }
-
-        /* =========================================
-           CTA, quiet end-of-page
-           ========================================= */
-        .fnd-cta {
-            padding: 96px 0;
-            background: #fafafa;
-        }
-        .fnd-cta-inner {
-            text-align: left;
-        }
-        .fnd-cta-h2 {
-            font-size: clamp(26px, 2.8vw, 34px);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin: 0 0 16px;
-            color: #111;
-        }
-        .fnd-cta-sub {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.6;
-            margin: 0 0 32px;
-            max-width: 580px;
-        }
-
-        /* Footer */
-        .fnc-footer-clean { background: #0a0a0a; padding: 56px 24px 24px; border-top: 1px solid #2a2a2a; color: #d1d5db; margin: 0; }
-        .fnc-footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 64px; padding-bottom: 40px; border-bottom: 1px solid #2a2a2a; }
-        .fnc-footer-brand { display: flex; flex-direction: column; gap: 18px; }
-
-        .fnc-footer-logo {
-            height: 56px;
-            width: auto;
-            max-width: 200px;
-            display: block;
-            background: #f3f4f6;
-            padding: 8px 12px;
-            border-radius: 8px;
-            align-self: flex-start;
-        }
-
-        .fnc-footer-tagline { font-size: 13.5px; color: #9ca3af; margin: 0; }
-        .fnc-footer-product-card { display: inline-flex; flex-direction: column; padding: 12px 16px; background: rgba(255, 107, 53, 0.08); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 8px; text-decoration: none; width: fit-content; transition: all 0.2s; }
-        .fnc-footer-product-card:hover { background: rgba(255, 107, 53, 0.12); transform: translateY(-1px); }
-        .fnc-footer-product-label { font-size: 10px; color: #FF6B35; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
-        .fnc-footer-product-name { color: #f3f4f6; font-size: 14px; font-weight: 500; }
-        .fnc-footer-col h4 { font-size: 12px; text-transform: uppercase; color: #f3f4f6; margin-bottom: 18px; letter-spacing: 0.08em; }
-        .fnc-footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-        .fnc-footer-col a, .fnc-footer-col li { color: #9ca3af; text-decoration: none; font-size: 14px; transition: color 0.2s; }
-        .fnc-footer-col a:hover { color: white; }
-        .fnc-footer-bottom { text-align: center; margin-top: 24px; font-size: 12px; color: #6b7280; }
-
-        @media (max-width: 860px) {
-            .fnd-hero { padding: 32px 0 48px; }
-            .fnd-hero-grid { grid-template-columns: 1fr; gap: 32px; }
-            .fnd-hero-portrait { max-width: 280px; }
-            .fnd-story { padding: 56px 0 48px; }
-            .fnd-prose { font-size: 16px; }
-            .fnd-pullquote { padding: 32px 24px; margin: 48px 0; }
-            .fnd-pullquote::before { left: 16px; padding: 0 12px; }
-            .fnd-pullquote p { font-size: 18px; }
-            .fnd-facts { padding: 40px 0; }
-            .fnd-facts-row { grid-template-columns: 1fr 1fr; }
-            .fnd-cta { padding: 56px 0 72px; }
-            .fnc-footer-inner { grid-template-columns: 1fr; gap: 36px; }
-        }
-    </style>
-
     <script>
-        (function () {
-            const btn = document.querySelector('.menu-button');
-            const links = document.querySelector('.nav-links');
-            if (!btn || !links) return;
 
-            window.toggleMenu = function () {
-                const isOpen = links.classList.toggle('open');
-                btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            };
-        })();
     </script>
 
-    <script src="script-motion.js"></script>
-    <script src="script.js"></script>
+
+    <script src="script.js">
+
+
+    </script>
 </body>
 
 </html>

@@ -7,540 +7,124 @@
     <title>FNC | Contact Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="icon" type="image/svg+xml" href="image/general_image/fnc-logo.svg">
-    <link rel="apple-touch-icon" href="image/general_image/fnc-logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/general_image/raw.png">
+    <link rel="apple-touch-icon" href="image/general_image/raw.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/general_styles/nav_styles.css?v=2">
-    <link rel="stylesheet" href="styles/general_styles/motion.css">
+    <link rel="stylesheet" href="styles/general_styles/nav_styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/general_styles/footer.css">
 </head>
 
 <body>
 
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-        <defs>
-            <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-            </symbol>
-        </defs>
-    </svg>
-
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting logo" class="navbar-logo">
+    <nav class="navbar puppy-park">
+        <div class="navbar-brand animate animate-slide-left">
+            <img src="image/general_image/newlogo (1).png" alt="Five Nines Consulting Logo">
         </div>
-        <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="company.html">Company</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="work-with-us.html">Work With Us</a></li>
-            <li><a href="contact.html" class="cont active" aria-current="page">Contact Us</a></li>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links appear-effect">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="company.html" class="active">Company</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="fnc-veteran-services.html" class="active kitty-bx">Work With Us</a></li>
+
+            <!-- <li><a href="blockchain-MFA.html" class="active">Blockchain MFA</a></li> -->
+
+            <!-- <li><a href="https://medium.com/@FNCLLC" class="active kitty-bx">Blog</a></li> -->
+
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor"
+                    class="active cont appear-effect">Contact Us</a></li>
         </ul>
+
     </nav>
 
-    <main>
+    <div class="cntact-section contacts puppy-park">
+        <h1 class="appear-effect kitty-box">Get in touch</h1>
+        <p class="sub-text kitty-box appear-effect">You can contact us by email</p>
+        <a href="mailto:tehrus@gmail.com" class="email-link kitty-box appear-effect">
+            info@fiveninesconsulting.io
+        </a>
+    </div>
 
-        <section class="fnc-contact-section" id="contact" aria-labelledby="fnc-contact-heading">
-            <div class="fnc-contact-wrap">
+    <div class="form-container appear-effect">
+        <form>
+            <label for="name" class="labell">Name</label>
+            <input type="text" id="name" placeholder="Mark John">
 
-                <div class="fnc-contact-intro fnc-reveal">
-                    <span class="fnc-contact-eyebrow">Get in touch</span>
-                    <h2 id="fnc-contact-heading">Let's talk.</h2>
-                    <p>Whether you're evaluating PromptSentry for an AI deployment, scoping a consulting engagement, or want to be part of our long-term veteran training mission, we'd love to hear from you.</p>
+            <label for="email" class="labell">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
 
-                    <div class="fnc-contact-meta">
-                        <div class="fnc-contact-meta-item">
-                            <strong>Roanoke, VA</strong>
-                            <span>United States</span>
-                        </div>
-                        <div class="fnc-contact-meta-item">
-                            <strong>Prefer email?</strong>
-                            <span>Reach out to <a href="mailto:consult@fiveninesconsulting.net">consult@fiveninesconsulting.net</a></span>
-                        </div>
+            <label for="message" class="labell">How can we help you?</label>
+            <textarea style="height: 283px;" id="message"
+                placeholder="Let us know your challenges or vision. We're ready to help."></textarea>
+
+            <label for="budget" class="labell">What is your budget?</label>
+            <input type="text" id="budget" placeholder="1000 USD">
+            <a href="mailto:vasiliy.s.ivanov@fiveninesconsulting.io" class="labelll"
+                style="width: 141px ; color: white; ">Submit</a>
+
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="contact-us">
+            <h3>CONTACT US</h3>
+            <hr>
+        </div>
+        <div class="container">
+
+
+            <div class="footer-container">
+                <div class="footer-column">
+
+                    <img src="image/general_image/five nine.png" alt="Five Nines Consulting" class="footer-logo">
+
+                    <div class="social-links">
+                        <!-- <a href="https://x.com/fncnodeos" target="_blank"> X</a><br> -->
+                        <a href="https://www.linkedin.com/in/vasiliy-s-ivanov/" target="_blank"> LinkedIn</a><br>
+                        <a href="https://www.facebook.com/share/1FNtTRnNj4/" target="_blank"> Facebook</a><br>
+
                     </div>
 
-                    <aside class="fnc-contact-aside" aria-label="A note from the team">
-                        <div class="fnc-aside-label">A note from us</div>
-                        <p class="fnc-aside-quote">We read every message ourselves. No bots, no ticket queue, no runaround.</p>
-                        <p class="fnc-aside-attr">FNC team</p>
-                    </aside>
                 </div>
 
-                <div class="fnc-contact-form-wrap fnc-reveal">
-                    <form id="fncContactForm" class="fnc-contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSd1Ho8t0PjmtSrqPen3bu4U6AK7FR6Fv58SisCfGEQcYeXNVw/formResponse" method="POST" novalidate>
-                        <div class="fnc-form-row">
-                            <div class="fnc-form-group">
-                                <label for="fnc-name">Your name</label>
-                                <input type="text" id="fnc-name" name="entry.1461097994" required placeholder="Jane Doe">
-                            </div>
-                            <div class="fnc-form-group">
-                                <label for="fnc-email">Work email</label>
-                                <input type="email" id="fnc-email" name="entry.1364959636" required placeholder="jane@company.com">
-                            </div>
-                        </div>
+                <div class="footer-column">
+                    <h3> Quick links</h3>
+                    <div class="quick-links">
 
-                        <div class="fnc-form-row">
-                            <div class="fnc-form-group">
-                                <label for="fnc-company">Company or organization</label>
-                                <input type="text" id="fnc-company" name="entry.1653915861" placeholder="Acme Corp">
-                            </div>
-                            <div class="fnc-form-group">
-                                <label for="fnc-interest">I'm interested in</label>
-                                <select id="fnc-interest" name="entry.1093657412" required>
-                                    <option value="" disabled selected>Select an option</option>
-                                    <option value="PromptSentry (AI Security)">PromptSentry (AI Security)</option>
-                                    <option value="AI Infrastructure Consulting">AI Infrastructure Consulting</option>
-                                    <option value="Cloud Migration &amp; Optimization">Cloud Migration &amp; Optimization</option>
-                                    <option value="Custom Website Development">Custom Website Development</option>
-                                    <option value="Partnership opportunity">Partnership opportunity</option>
-                                    <option value="Veteran training framework">Veteran training framework</option>
-                                    <option value="Press or media inquiry">Press or media inquiry</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                        </div>
+                        <a href="https://fiveninesconsulting.io">Home</a><br>
+                        <a href="services.html">Services</a><br>
+                        <a href="company.html">Company</a><br>
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor">Contact
+                            Us</a><br>
+                        <a href="https://medium.com/@FNCLLC">Blog</a><br>
+                    </div>
+                </div>
 
-                        <div class="fnc-form-group">
-                            <label for="fnc-message">How can we help?</label>
-                            <textarea id="fnc-message" name="entry.1974945190" required placeholder="Tell us about your project, timeline, or any context that would help us prepare for a productive first call..."></textarea>
-                        </div>
+                <div class="footer-column">
+                    <h3>Location</h3>
+                    <div class="lokation">
 
-                        <button type="submit" class="fnc-submit-btn">
-                            Send message
-                            <svg aria-hidden="true"><use href="#i-arrow-right"/></svg>
-                        </button>
-
-                        <p class="fnc-form-disclaimer">We respect your privacy. Your information stays with FNC and is never shared.</p>
-                    </form>
-
-                    <div id="fncContactSuccess" class="fnc-contact-success" hidden>
-                        <div class="fnc-success-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                        </div>
-                        <h3>Message received</h3>
-                        <p>Thanks, we got your note and someone from the team will reply within 1 to 3 business days.</p>
+                        <p class="mails">Roanoke, VA</p>
+                    </div>
+                    <div class="footer-column news">
+                        <h3>Get in touch</h3>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScjwVkAPs54mZl9hBBqsi4BPHkob9p4On7lgJtHL0S4dQ7NPA/viewform?usp=publish-editor" class="mails">Get in touch</a>
+                        <h3 style=" margin-top: 15px;">Phone</h3>
+                        <p class="mails">703-309-6460</p>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="footer-bottom">
+                <hr>
+                <p>© 2025 FNC</p>
+            </div>
 
-    </main>
-
-    <footer class="fnc-footer-clean">
-        <div class="fnc-footer-inner">
-            <div class="fnc-footer-brand">
-                <img src="image/general_image/fnc-logo.svg" alt="Five Nines Consulting" class="fnc-footer-logo">
-                <p class="fnc-footer-tagline">Building technology products with discipline and craft.</p>
-                <a href="https://promptsentry.net" target="_blank" rel="noopener noreferrer" class="fnc-footer-product-card">
-                    <span class="fnc-footer-product-label">Our Product</span>
-                    <span class="fnc-footer-product-name">PromptSentry, AI Security Guardrail <span class="arrow" aria-hidden="true">→</span></span>
-                </a>
-            </div>
-            <div class="fnc-footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="company.html">About FNC</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="work-with-us.html">Work With Us</a></li>
-                    <li><a href="https://medium.com/@FNCLLC" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                </ul>
-            </div>
-            <div class="fnc-footer-col">
-                <h4>Get in touch</h4>
-                <ul>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li>Roanoke, VA, United States</li>
-                </ul>
-                <div class="fnc-footer-social">
-                    <a href="https://www.linkedin.com/company/five-nines-consulting-llc-fnc/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/share/1FNtTRnNj4/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="fnc-footer-bottom">
-            <p>© 2026 Five Nines Consulting LLC</p>
-        </div>
     </footer>
-
-    <style>
-        body { background: #ffffff; font-family: 'Work Sans', sans-serif; margin: 0; }
-        main { display: block; }
-
-        .navbar-logo { height: 48px; width: auto; }
-
-        .fnc-contact-section {
-            padding: 80px 24px 96px;
-            background: linear-gradient(180deg, #fafafa, #ffffff);
-            position: relative;
-            overflow: hidden;
-        }
-        .fnc-contact-section::before {
-            content: '';
-            position: absolute;
-            top: -100px; right: -100px;
-            width: 400px; height: 400px;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.05), transparent 70%);
-            pointer-events: none;
-        }
-
-        .fnc-contact-wrap {
-            max-width: 1140px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1.25fr;
-            gap: 80px;
-            align-items: start;
-            position: relative;
-        }
-
-        .fnc-contact-intro {
-            padding-top: 0;
-            margin-top: -4px;
-        }
-
-        .fnc-contact-eyebrow {
-            display: inline-block;
-            padding: 6px 14px;
-            background: rgba(255, 107, 53, 0.1);
-            color: #FF6B35;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            border-radius: 100px;
-            margin-bottom: 20px;
-        }
-        .fnc-contact-intro h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: clamp(36px, 4.5vw, 52px);
-            font-weight: 700;
-            color: #111;
-            line-height: 1.1;
-            margin: 0 0 16px;
-            letter-spacing: -0.02em;
-        }
-        .fnc-contact-intro > p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.65;
-            margin: 0 0 16px;
-        }
-
-        .fnc-contact-meta {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            padding-top: 24px;
-            border-top: 1px solid #e5e7eb;
-        }
-        .fnc-contact-meta-item { display: flex; flex-direction: column; gap: 4px; }
-        .fnc-contact-meta-item strong { font-size: 14px; color: #111; font-weight: 600; }
-        .fnc-contact-meta-item span { font-size: 13px; color: #6b7280; line-height: 1.55; }
-        .fnc-contact-meta-item a {
-            color: #FF6B35;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.15s;
-        }
-        .fnc-contact-meta-item a:hover { color: #e85a26; text-decoration: underline; }
-
-        .fnc-contact-aside {
-            margin-top: 40px;
-            padding-top: 22px;
-            border-top: 2px solid #111;
-            max-width: 420px;
-        }
-        .fnc-aside-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 10.5px;
-            font-weight: 500;
-            color: #111;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            margin-bottom: 14px;
-        }
-        .fnc-aside-quote {
-            font-size: 17px;
-            color: #111;
-            font-weight: 500;
-            line-height: 1.5;
-            margin: 0 0 10px;
-            letter-spacing: -0.01em;
-        }
-        .fnc-aside-attr {
-            font-size: 11px;
-            color: #6b7280;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        .fnc-contact-form-wrap {
-            position: relative;
-            background: transparent;
-            padding: 0;
-            box-shadow: none;
-            border: none;
-            margin-top: 0;
-        }
-
-        .fnc-form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 48px;
-        }
-        .fnc-form-group {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 48px;
-            position: relative;
-        }
-        .fnc-form-row .fnc-form-group { margin-bottom: 0; }
-        .fnc-form-group label {
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #555;
-            margin-bottom: 8px;
-        }
-        .fnc-form-group input,
-        .fnc-form-group select,
-        .fnc-form-group textarea {
-            padding: 12px 0;
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid #d1d5db;
-            border-radius: 0;
-            color: #111;
-            font-size: 16px;
-            font-family: inherit;
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
-        }
-        .fnc-form-group input::placeholder,
-        .fnc-form-group textarea::placeholder { color: #9ca3af; font-weight: 400; }
-
-        .fnc-form-group input:hover,
-        .fnc-form-group select:hover,
-        .fnc-form-group textarea:hover {
-            border-bottom-color: #888;
-        }
-
-        .fnc-form-group input:focus,
-        .fnc-form-group select:focus,
-        .fnc-form-group textarea:focus {
-            outline: none;
-            border-bottom-color: #FF6B35;
-            box-shadow: 0 1px 0 0 #FF6B35;
-        }
-        .fnc-form-group textarea {
-            resize: vertical;
-            min-height: 80px;
-            line-height: 1.5;
-        }
-
-        .fnc-form-group select {
-            appearance: none;
-            -webkit-appearance: none;
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
-            background-repeat: no-repeat;
-            background-position: right 0px center;
-            cursor: pointer;
-            padding-right: 24px;
-        }
-
-        .fnc-submit-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: #111;
-            color: white;
-            padding: 16px 32px;
-            font-size: 15px;
-            font-weight: 600;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-family: inherit;
-            transition: all 0.2s ease;
-            margin-top: 16px;
-        }
-        .fnc-submit-btn:hover { background: #FF6B35; transform: translateY(-1px); }
-        .fnc-submit-btn svg { width: 16px; height: 16px; }
-
-        .fnc-form-disclaimer {
-            font-size: 12px;
-            color: #888;
-            margin: 20px 0 0;
-            line-height: 1.5;
-        }
-
-        .fnc-contact-success { text-align: left; padding: 40px 0; }
-        .fnc-success-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: rgba(34, 197, 94, 0.1);
-            color: #16a34a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 24px;
-        }
-        .fnc-success-icon svg { width: 28px; height: 28px; }
-        .fnc-contact-success h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
-            color: #111;
-            font-weight: 700;
-            margin: 0 0 12px;
-            letter-spacing: -0.01em;
-        }
-        .fnc-contact-success p { font-size: 16px; color: #555; margin: 0; line-height: 1.6; }
-
-        @media (max-width: 860px) {
-            .fnc-contact-section { padding: 56px 20px 72px; }
-            .fnc-contact-wrap { grid-template-columns: 1fr; gap: 56px; }
-            .fnc-form-row { grid-template-columns: 1fr; gap: 0; margin-bottom: 0; }
-            .fnc-form-row .fnc-form-group { margin-bottom: 32px; }
-            .fnc-form-group { margin-bottom: 32px; }
-            .fnc-contact-aside { margin-top: 28px; }
-        }
-
-        /* Footer */
-        .fnc-footer-clean {
-            background: #0a0a0a !important;
-            padding: 56px 24px 24px !important;
-            border-top: 1px solid #2a2a2a !important;
-            color: #d1d5db !important;
-            font-family: 'Work Sans', sans-serif !important;
-            margin: 0 !important;
-        }
-        .fnc-footer-clean *, .fnc-footer-clean *::before, .fnc-footer-clean *::after { box-sizing: border-box; }
-        .fnc-footer-inner {
-            max-width: 1200px; margin: 0 auto;
-            display: grid; grid-template-columns: 1.5fr 1fr 1fr;
-            gap: 64px; padding-bottom: 40px;
-            border-bottom: 1px solid #2a2a2a; align-items: start;
-        }
-        .fnc-footer-brand { display: flex; flex-direction: column; gap: 18px; max-width: 380px; }
-        .fnc-footer-logo {
-            height: 56px; width: auto; max-width: 200px; display: block;
-            background: #f3f4f6; padding: 8px 12px; border-radius: 8px; align-self: flex-start;
-        }
-        .fnc-footer-tagline { font-size: 13.5px; color: #9ca3af; line-height: 1.65; margin: 0; }
-        .fnc-footer-product-card {
-            display: inline-flex; flex-direction: column; gap: 4px;
-            padding: 12px 16px;
-            background: rgba(255, 107, 53, 0.08);
-            border: 1px solid rgba(255, 107, 53, 0.3);
-            border-radius: 8px; text-decoration: none;
-            transition: all 0.2s ease; max-width: 320px;
-        }
-        .fnc-footer-product-card:hover { background: rgba(255, 107, 53, 0.12); border-color: rgba(255, 107, 53, 0.5); transform: translateY(-1px); }
-        .fnc-footer-product-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: #FF6B35; font-weight: 700; }
-        .fnc-footer-product-name { color: #f3f4f6; font-size: 14px; font-weight: 500; }
-        .fnc-footer-product-name .arrow { color: #FF6B35; margin-left: 4px; transition: transform 0.2s ease; display: inline-block; }
-        .fnc-footer-product-card:hover .arrow { transform: translateX(3px); }
-        .fnc-footer-col h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #f3f4f6; margin: 0 0 18px; font-weight: 600; }
-        .fnc-footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-        .fnc-footer-col ul li { font-size: 14px; color: #9ca3af; line-height: 1.5; }
-        .fnc-footer-col ul li a { color: #9ca3af; text-decoration: none; transition: color 0.15s ease; }
-        .fnc-footer-col ul li a:hover { color: #f3f4f6; }
-        .fnc-footer-social { display: flex; gap: 8px; margin-top: 18px; }
-        .fnc-footer-social a {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 32px; height: 32px; border-radius: 6px;
-            border: 1px solid #2a2a2a; color: #9ca3af;
-            transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
-        }
-        .fnc-footer-social a:hover { color: #f3f4f6; border-color: #4a4a4a; background: rgba(255, 255, 255, 0.03); }
-        .fnc-footer-bottom { max-width: 1200px; margin: 24px auto 0; text-align: center; }
-        .fnc-footer-bottom p { font-size: 12px; color: #6b7280; margin: 0; }
-
-        @media (max-width: 860px) {
-            .fnc-footer-inner { grid-template-columns: 1fr; gap: 36px; padding-bottom: 28px; }
-            .fnc-footer-clean { padding: 40px 20px 20px !important; }
-            .fnc-footer-brand { max-width: 100%; }
-            .fnc-footer-product-card { max-width: 100%; }
-        }
-    </style>
-
-    <script>
-        (function () {
-            const btn = document.querySelector('.menu-button');
-            const links = document.querySelector('.nav-links');
-            if (btn && links) {
-                window.toggleMenu = function () {
-                    const isOpen = links.classList.toggle('open');
-                    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-                };
-            }
-        })();
-
-        // Form Submission Logic pointing silently to Google Forms
-        (function () {
-            const form = document.getElementById('fncContactForm');
-            const successMsg = document.getElementById('fncContactSuccess');
-            const submitBtn = form ? form.querySelector('.fnc-submit-btn') : null;
-            if (!form) return;
-
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-
-                const name = form.querySelector('#fnc-name').value.trim();
-                const email = form.querySelector('#fnc-email').value.trim();
-                const message = form.querySelector('#fnc-message').value.trim();
-                const interest = form.querySelector('#fnc-interest').value;
-
-                if (!name || !email || !message || !interest) {
-                    alert('Please fill in all required fields.');
-                    return;
-                }
-
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(email)) {
-                    alert('Please enter a valid email address.');
-                    return;
-                }
-
-                const originalBtnText = submitBtn.innerHTML;
-                submitBtn.innerHTML = 'Sending...';
-                submitBtn.style.opacity = '0.7';
-                submitBtn.style.pointerEvents = 'none';
-
-                fetch(form.action, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    body: new FormData(form)
-                })
-                .then(() => {
-                    form.style.display = 'none';
-                    successMsg.hidden = false;
-                    successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                })
-                .catch((error) => {
-                    console.error('Error submitting form:', error);
-                    alert('There was an issue sending your message. Please try again.');
-                    submitBtn.innerHTML = originalBtnText;
-                    submitBtn.style.opacity = '1';
-                    submitBtn.style.pointerEvents = 'auto';
-                });
-            });
-        })();
-    </script>
-
-    <script src="script-motion.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,113 +1,195 @@
 .navbar {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Work Sans", serif;
+    font-size: 16px;
+    line-height: 18.77px;
     display: flex;
-    justify-content: space-between; /* This puts the Logo on the left and Links on the right */
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: auto;
     padding: 15px 30px;
     background: white;
     position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    box-sizing: border-box;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
-/* Bulletproof Desktop Logo */
 .navbar-brand img {
-    height: 60px !important;
-    width: auto !important; 
-    min-width: 140px !important; /* Safety net so the SVG doesn't vanish */
-    display: block !important;
-    margin: 0 !important;
+    height: 91px;
+    width: 169px;
+    content: url('../../image/general_image/newlogo.png');
+    margin-top: 12px;
+
+}
+
+.cont {
+    text-decoration: none;
+    background-color: #FF6B35;
+    padding: 14.5px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    color: white;
+    margin-right: 20px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    align-items: center;
-    gap: 36px;
-    margin: 0;
-    padding: 0;
+    gap: 40px;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #111;
-    font-family: "Work Sans", sans-serif !important; /* Mobile font override */
+    color: black;
     font-weight: 500;
     font-size: 16px;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
     position: relative;
-}
+    font-family: "Work Sans", serif;
 
-.nav-links a:hover {
-    color: #FF6B35;
 }
 
 .nav-links a.active {
     color: #FF6B35;
-    font-weight: 600;
+    font-weight: bold;
+    font-family: "Work Sans", serif;
 }
 
-/* The Orange Button */
-.cont {
+.cts-button {
     background-color: #FF6B35;
+    color: white;
     padding: 12px 24px;
-    border-radius: 6px;
-    color: white !important;
-    font-weight: 600 !important;
-    transition: opacity 0.2s ease;
-}
-.cont:hover {
-    opacity: 0.9;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 
-.menu-button {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    font-family: inherit !important; /* Stops iOS from using system UI font */
-}
-
-/* Mobile View */
-@media (max-width: 860px) {
-    .navbar {
-        padding: 15px 24px;
-    }
-    .menu-button {
-        display: block;
-    }
-    .navbar-brand img {
-        height: 38px !important;
-        min-width: 110px !important;
-    }
+@media (min-width: 768px) {
     .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+
+.nav-links a.active {
+    color: #FF6B35;
+    font-family: "Work Sans", serif;
+    font-weight: bold;
+}
+
+.nav-links a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #FF6B35;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.cts-button {
+    background-color: #FF6B35;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.nav-links .cts-button {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .nav-links .cts-button {
+        display: block;
+        background-color: #FF6B35;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .cont {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .navbar {
+        font-family: "Work Sans", serif;
+        font-size: 16px;
+        line-height: 18.77px;
+
+        font-style: normal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        height: 104.14px;
+        background: white;
+    }
+
+    .navbar-brand img {
+        height: 91px;
+        width: 177px;
+        border-radius: 0;
+        margin-top: 50px;
+        margin-left: -20px;
+    }
+
+    .nav-links {
+        list-style: none;
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 24px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         gap: 20px;
+        position: fixed;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
     }
-    
-    /* Matches both the CSS class and the JS toggle script */
-    .nav-links.active,
-    .nav-links.open {
+
+    .nav-links.active {
         display: flex;
     }
-    
-    .cont {
-        text-align: center;
-        display: block;
-    }
+
 }
